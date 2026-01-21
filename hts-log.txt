@@ -1,0 +1,235 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 21 Jan 2026 14:08:44 at https://advensys-conseil.lu/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://advensys-conseil.lu/ -O1 "C:\My Web Sites\conseil" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:08:54	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://advensys-conseil.lu/)
+14:11:30	Error: 	"Not Found" (404) at link https://advensys-conseil.lu/2051-2/ (from https://advensys-conseil.lu/)
+14:11:31	Warning: 	Moved Permanently for https://advensys-conseil.lu/fr/about/
+14:11:31	Warning: 	File has moved from https://advensys-conseil.lu/fr/about/ to https://advensys-conseil.lu/about/
+14:11:31	Warning: 	Moved Permanently for https://advensys-conseil.lu/fr/main-page/services/for-private-people-luxembourg/
+14:11:31	Warning: 	File has moved from https://advensys-conseil.lu/fr/main-page/services/for-private-people-luxembourg/ to https://advensys-conseil.lu/main-page/services/for-private-people-luxembourg/
+14:12:10	Warning: 	Moved Permanently for https://advensys-conseil.lu/fr/main-page/services/accounting/
+14:12:10	Warning: 	File has moved from https://advensys-conseil.lu/fr/main-page/services/accounting/ to https://advensys-conseil.lu/main-page/services/accounting/
+14:12:11	Warning: 	Moved Permanently for https://advensys-conseil.lu/fr/main-page/services/tax-advice/
+14:12:11	Warning: 	File has moved from https://advensys-conseil.lu/fr/main-page/services/tax-advice/ to https://advensys-conseil.lu/main-page/services/tax-advice/
+14:12:11	Warning: 	Moved Permanently for https://advensys-conseil.lu/fr/main-page/services/coaching/
+14:12:11	Warning: 	File has moved from https://advensys-conseil.lu/fr/main-page/services/coaching/ to https://advensys-conseil.lu/main-page/services/coaching/
+14:13:12	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/category//
+14:13:12	Warning: 	Redirected link is identical because of 'URL Hack' option: https://advensys-conseil.lu/en/category// and https://advensys-conseil.lu/en/category/
+14:13:12	Warning: 	File has moved from https://advensys-conseil.lu/en/category// to https://advensys-conseil.lu/en/category/
+14:13:54	Error: 	"Not Found" (404) at link https://advensys-conseil.lu/en/2051-2/ (from https://advensys-conseil.lu/en/)
+14:13:54	Error: 	"Not Found" (404) at link https://advensys-conseil.lu/en/main-page/services/for-fund/ (from https://advensys-conseil.lu/en/)
+14:15:20	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=36
+14:15:20	Warning: 	File has moved from https://advensys-conseil.lu/?p=36 to https://advensys-conseil.lu/about/
+14:15:20	Error: 	"Not Found" (404) at link https://advensys-conseil.lu/fr/ (from https://advensys-conseil.lu/about/)
+14:15:20	Error: 	"Not Found" (404) at link https://advensys-conseil.lu/about/www.made-in-luxembourg.lu (from https://advensys-conseil.lu/about/)
+14:15:20	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=226
+14:15:20	Warning: 	File has moved from https://advensys-conseil.lu/?p=226 to https://advensys-conseil.lu/main-page/services/
+14:15:20	Warning: 	Moved Permanently for https://advensys-conseil.lu/fr/main-page/services/for-companies/
+14:15:20	Warning: 	File has moved from https://advensys-conseil.lu/fr/main-page/services/for-companies/ to https://advensys-conseil.lu/main-page/services/for-companies/
+14:15:20	Error: 	"Not Found" (404) at link https://advensys-conseil.lu/fr/main-page/services/for-fund/ (from https://advensys-conseil.lu/main-page/services/)
+14:15:20	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=334
+14:15:20	Warning: 	File has moved from https://advensys-conseil.lu/?p=334 to https://advensys-conseil.lu/main-page/services/for-private-people-luxembourg/
+14:15:20	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=238
+14:15:20	Warning: 	File has moved from https://advensys-conseil.lu/?p=238 to https://advensys-conseil.lu/main-page/services/accounting/
+14:15:20	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=242
+14:15:20	Warning: 	File has moved from https://advensys-conseil.lu/?p=242 to https://advensys-conseil.lu/main-page/services/tax-advice/
+14:15:20	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=246
+14:15:20	Warning: 	File has moved from https://advensys-conseil.lu/?p=246 to https://advensys-conseil.lu/main-page/services/coaching/
+14:16:38	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=2026
+14:16:38	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=2026 to https://advensys-conseil.lu/blog/business/the-advantages-and-disadvantages-of-incorporating-in-luxembourg/
+14:17:18	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=1905
+14:17:18	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=1905 to https://advensys-conseil.lu/blog/business/les-meilleurs-secteurs-pour-creer-une-entreprise-au-luxembourg/
+14:18:43	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=1868
+14:18:43	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=1868 to https://advensys-conseil.lu/blog/steps-for-setting-up-a-company-in-luxembourg/
+14:18:44	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=1842
+14:18:44	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=1842 to https://advensys-conseil.lu/blog/how-to-improve-your-management-skills/
+14:18:45	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=1811
+14:18:45	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=1811 to https://advensys-conseil.lu/blog/accounting-internal-or-accounting-external/
+14:19:25	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=40
+14:19:25	Warning: 	File has moved from https://advensys-conseil.lu/?p=40 to https://advensys-conseil.lu/contact/
+14:19:25	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=2026
+14:19:25	Warning: 	File has moved from https://advensys-conseil.lu/?p=2026 to https://advensys-conseil.lu/blog/business/the-advantages-and-disadvantages-of-incorporating-in-luxembourg/
+14:19:25	Error: 	"Method Not Allowed" (405) at link https://advensys-conseil.lu/xmlrpc.php (from https://advensys-conseil.lu/blog/business/the-advantages-and-disadvantages-of-incorporating-in-luxembourg/)
+14:19:25	Error: 	"Not Found" (404) at link https://advensys-conseil.lu/fr/category/blog/ (from https://advensys-conseil.lu/blog/business/the-advantages-and-disadvantages-of-incorporating-in-luxembourg/)
+14:19:25	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=1905
+14:19:25	Warning: 	File has moved from https://advensys-conseil.lu/?p=1905 to https://advensys-conseil.lu/blog/business/les-meilleurs-secteurs-pour-creer-une-entreprise-au-luxembourg/
+14:19:25	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=1868
+14:19:25	Warning: 	File has moved from https://advensys-conseil.lu/?p=1868 to https://advensys-conseil.lu/blog/steps-for-setting-up-a-company-in-luxembourg/
+14:19:25	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=36
+14:19:25	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=36 to https://advensys-conseil.lu/en/about/
+14:19:25	Error: 	"Not Found" (404) at link https://advensys-conseil.lu/en/about/www.made-in-luxembourg.lu (from https://advensys-conseil.lu/en/about/)
+14:19:25	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=226
+14:19:25	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=226 to https://advensys-conseil.lu/en/main-page/services/
+14:19:26	Error: 	"Not Found" (404) at link https://advensys-conseil.lu/main-page/services/for-fund/ (from https://advensys-conseil.lu/en/main-page/services/)
+14:19:26	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=334
+14:19:26	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=334 to https://advensys-conseil.lu/en/main-page/services/for-private-people-luxembourg/
+14:19:27	Error: 	"Not Found" (404) at link https://advensys-conseil.lu/blog/business/portage-salarial-luxembourg-une-solution-optimale/ (from https://advensys-conseil.lu/en/main-page/services/for-private-people-luxembourg/)
+14:19:27	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=238
+14:19:27	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=238 to https://advensys-conseil.lu/en/main-page/services/accounting/
+14:19:27	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=242
+14:19:27	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=242 to https://advensys-conseil.lu/en/main-page/services/tax-advice/
+14:19:27	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=246
+14:19:27	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=246 to https://advensys-conseil.lu/en/main-page/services/coaching/
+14:19:27	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=40
+14:19:27	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=40 to https://advensys-conseil.lu/en/contact/
+14:19:27	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=230
+14:19:27	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=230 to https://advensys-conseil.lu/en/main-page/services/for-companies/
+14:19:27	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=2026
+14:19:27	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=2026 to https://advensys-conseil.lu/en/blog/business/the-advantages-and-disadvantages-of-incorporating-in-luxembourg/
+14:20:46	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=2026
+14:20:46	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=2026 to https://advensys-conseil.lu/en/blog/business/the-advantages-and-disadvantages-of-incorporating-in-luxembourg/
+14:20:50	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/tag//
+14:20:50	Warning: 	Redirected link is identical because of 'URL Hack' option: https://advensys-conseil.lu/en/tag// and https://advensys-conseil.lu/en/tag/
+14:20:50	Warning: 	File has moved from https://advensys-conseil.lu/en/tag// to https://advensys-conseil.lu/en/tag/
+14:20:52	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=1905
+14:20:52	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=1905 to https://advensys-conseil.lu/en/blog/business/les-meilleurs-secteurs-pour-creer-une-entreprise-au-luxembourg/
+14:21:29	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=1905
+14:21:29	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=1905 to https://advensys-conseil.lu/en/blog/business/les-meilleurs-secteurs-pour-creer-une-entreprise-au-luxembourg/
+14:21:34	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=1868
+14:21:34	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=1868 to https://advensys-conseil.lu/en/blog/steps-for-setting-up-a-company-in-luxembourg/
+14:22:08	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=1868
+14:22:08	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=1868 to https://advensys-conseil.lu/en/blog/steps-for-setting-up-a-company-in-luxembourg/
+14:22:49	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=1787
+14:22:49	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=1787 to https://advensys-conseil.lu/blog/successful-new-product/
+14:23:28	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=1763
+14:23:28	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=1763 to https://advensys-conseil.lu/blog/advantages-of-setting-up-your-company-in-luxembourg/
+14:23:29	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=1732
+14:23:29	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=1732 to https://advensys-conseil.lu/blog/business-coaching-introduction-and-qa/
+14:23:29	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=1713
+14:23:29	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=1713 to https://advensys-conseil.lu/blog/statistics-business-coaching-9-reasons/
+14:23:30	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=1684
+14:23:30	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=1684 to https://advensys-conseil.lu/blog/how-to-become-entrepreneur/
+14:23:30	Warning: 	Moved Permanently for https://advensys-conseil.lu/category/blog/page/1/
+14:23:30	Warning: 	File has moved from https://advensys-conseil.lu/category/blog/page/1/ to https://advensys-conseil.lu/category/blog/
+14:23:30	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=1842
+14:23:30	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=1842 to https://advensys-conseil.lu/en/blog/how-to-improve-your-management-skills/
+14:23:31	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=1811
+14:23:31	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=1811 to https://advensys-conseil.lu/en/blog/accounting-internal-or-accounting-external/
+14:24:11	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=72
+14:24:11	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=72 to https://advensys-conseil.lu/blog/revealed-the-top-100-places-to-start-a-business-outside-of-london-2/
+14:24:12	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=1559
+14:24:12	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=1559 to https://advensys-conseil.lu/blog/my-passion-is-accounting-and-tax-returns-miodrag-milic/
+14:24:12	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=1537
+14:24:12	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=1537 to https://advensys-conseil.lu/blog/my-passion-is-accounting-andreia-dias/
+14:24:51	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=1458
+14:24:51	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=1458 to https://advensys-conseil.lu/blog/5-conseils-pour-choisir-le-cabinet-comptable-parfait-pour-vous/
+14:24:52	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=959
+14:24:52	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=959 to https://advensys-conseil.lu/blog/les-avantages-de-la-comptabilite-informatisee/
+14:24:52	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=998
+14:24:52	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=998 to https://advensys-conseil.lu/blog/luxembourg-tax-return-for-individuals-deduction/
+14:24:53	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=953
+14:24:53	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=953 to https://advensys-conseil.lu/blog/luxembourg-tax-return-for-individuals-list-of-documents/
+14:24:54	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=1654
+14:24:54	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=1654 to https://advensys-conseil.lu/blog/what-are-the-5-ps-of-marketing/
+14:24:54	Warning: 	Moved Permanently for https://advensys-conseil.lu/?post_type=post&p=995
+14:24:54	Warning: 	File has moved from https://advensys-conseil.lu/?post_type=post&p=995 to https://advensys-conseil.lu/blog/why-luxembourg-is-your-payment-hub-in-the-eu/
+14:24:54	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=1842
+14:24:54	Warning: 	File has moved from https://advensys-conseil.lu/?p=1842 to https://advensys-conseil.lu/blog/how-to-improve-your-management-skills/
+14:24:54	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=1811
+14:24:54	Warning: 	File has moved from https://advensys-conseil.lu/?p=1811 to https://advensys-conseil.lu/blog/accounting-internal-or-accounting-external/
+14:24:54	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=230
+14:24:54	Warning: 	File has moved from https://advensys-conseil.lu/?p=230 to https://advensys-conseil.lu/main-page/services/for-companies/
+14:24:55	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=1732
+14:24:55	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=1732 to https://advensys-conseil.lu/en/blog/business-coaching-introduction-and-qa/
+14:24:55	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=1713
+14:24:55	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=1713 to https://advensys-conseil.lu/en/blog/statistics-business-coaching-9-reasons/
+14:24:55	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=72
+14:24:55	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=72 to https://advensys-conseil.lu/en/blog/revealed-the-top-100-places-to-start-a-business-outside-of-london-2/
+14:25:36	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=1559
+14:25:36	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=1559 to https://advensys-conseil.lu/en/blog/my-passion-is-accounting-and-tax-returns-miodrag-milic/
+14:25:36	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=1537
+14:25:36	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=1537 to https://advensys-conseil.lu/en/blog/my-passion-is-accounting-andreia-dias/
+14:25:38	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=1458
+14:25:38	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=1458 to https://advensys-conseil.lu/en/blog/5-conseils-pour-choisir-le-cabinet-comptable-parfait-pour-vous/
+14:25:38	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=959
+14:25:38	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=959 to https://advensys-conseil.lu/en/blog/les-avantages-de-la-comptabilite-informatisee/
+14:26:17	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=998
+14:26:17	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=998 to https://advensys-conseil.lu/en/blog/luxembourg-tax-return-for-individuals-deduction/
+14:26:19	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=953
+14:26:19	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=953 to https://advensys-conseil.lu/en/blog/luxembourg-tax-return-for-individuals-list-of-documents/
+14:26:19	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=1842
+14:26:19	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=1842 to https://advensys-conseil.lu/en/blog/how-to-improve-your-management-skills/
+14:26:19	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=1787
+14:26:19	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=1787 to https://advensys-conseil.lu/en/blog/successful-new-product/
+14:26:20	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=1763
+14:26:20	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=1763 to https://advensys-conseil.lu/en/blog/advantages-of-setting-up-your-company-in-luxembourg/
+14:26:59	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=1684
+14:26:59	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=1684 to https://advensys-conseil.lu/en/blog/how-to-become-entrepreneur/
+14:26:59	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/category/blog/page/1/
+14:26:59	Warning: 	File has moved from https://advensys-conseil.lu/en/category/blog/page/1/ to https://advensys-conseil.lu/en/category/blog/
+14:26:59	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=1787
+14:26:59	Warning: 	File has moved from https://advensys-conseil.lu/?p=1787 to https://advensys-conseil.lu/blog/successful-new-product/
+14:26:59	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=1763
+14:26:59	Warning: 	File has moved from https://advensys-conseil.lu/?p=1763 to https://advensys-conseil.lu/blog/advantages-of-setting-up-your-company-in-luxembourg/
+14:26:59	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=1732
+14:26:59	Warning: 	File has moved from https://advensys-conseil.lu/?p=1732 to https://advensys-conseil.lu/blog/business-coaching-introduction-and-qa/
+14:26:59	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=1713
+14:26:59	Warning: 	File has moved from https://advensys-conseil.lu/?p=1713 to https://advensys-conseil.lu/blog/statistics-business-coaching-9-reasons/
+14:26:59	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=1684
+14:26:59	Warning: 	File has moved from https://advensys-conseil.lu/?p=1684 to https://advensys-conseil.lu/blog/how-to-become-entrepreneur/
+14:26:59	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=1811
+14:26:59	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=1811 to https://advensys-conseil.lu/en/blog/accounting-internal-or-accounting-external/
+14:26:59	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=1654
+14:26:59	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=1654 to https://advensys-conseil.lu/en/blog/what-are-the-5-ps-of-marketing/
+14:27:00	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?post_type=post&p=995
+14:27:00	Warning: 	File has moved from https://advensys-conseil.lu/en/?post_type=post&p=995 to https://advensys-conseil.lu/en/blog/why-luxembourg-is-your-payment-hub-in-the-eu/
+14:27:00	Warning: 	Moved Permanently for https://advensys-conseil.lu/category/blog/business/page/1/
+14:27:00	Warning: 	File has moved from https://advensys-conseil.lu/category/blog/business/page/1/ to https://advensys-conseil.lu/category/blog/business/
+14:27:00	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=72
+14:27:00	Warning: 	File has moved from https://advensys-conseil.lu/?p=72 to https://advensys-conseil.lu/blog/revealed-the-top-100-places-to-start-a-business-outside-of-london-2/
+14:27:00	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=1559
+14:27:00	Warning: 	File has moved from https://advensys-conseil.lu/?p=1559 to https://advensys-conseil.lu/blog/my-passion-is-accounting-and-tax-returns-miodrag-milic/
+14:27:00	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=1537
+14:27:00	Warning: 	File has moved from https://advensys-conseil.lu/?p=1537 to https://advensys-conseil.lu/blog/my-passion-is-accounting-andreia-dias/
+14:27:00	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=1458
+14:27:00	Warning: 	File has moved from https://advensys-conseil.lu/?p=1458 to https://advensys-conseil.lu/blog/5-conseils-pour-choisir-le-cabinet-comptable-parfait-pour-vous/
+14:27:00	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=959
+14:27:00	Warning: 	File has moved from https://advensys-conseil.lu/?p=959 to https://advensys-conseil.lu/blog/les-avantages-de-la-comptabilite-informatisee/
+14:27:00	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=998
+14:27:00	Warning: 	File has moved from https://advensys-conseil.lu/?p=998 to https://advensys-conseil.lu/blog/luxembourg-tax-return-for-individuals-deduction/
+14:27:00	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=953
+14:27:00	Warning: 	File has moved from https://advensys-conseil.lu/?p=953 to https://advensys-conseil.lu/blog/luxembourg-tax-return-for-individuals-list-of-documents/
+14:27:00	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=1654
+14:27:00	Warning: 	File has moved from https://advensys-conseil.lu/?p=1654 to https://advensys-conseil.lu/blog/what-are-the-5-ps-of-marketing/
+14:27:00	Warning: 	Retry after error -4 (No data (connection closed)) at link https://advensys-conseil.lu/?p=995 (from https://advensys-conseil.lu/blog/why-luxembourg-is-your-payment-hub-in-the-eu/)
+14:27:00	Warning: 	Retry after error -4 (No data (connection closed)) at link https://advensys-conseil.lu/en/category/blog/business/page/1/ (from https://advensys-conseil.lu/en/category/blog/business/page/2/)
+14:27:01	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=1732
+14:27:01	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=1732 to https://advensys-conseil.lu/en/blog/business-coaching-introduction-and-qa/
+14:27:01	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=1713
+14:27:01	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=1713 to https://advensys-conseil.lu/en/blog/statistics-business-coaching-9-reasons/
+14:27:01	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=72
+14:27:01	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=72 to https://advensys-conseil.lu/en/blog/revealed-the-top-100-places-to-start-a-business-outside-of-london-2/
+14:27:01	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=1559
+14:27:01	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=1559 to https://advensys-conseil.lu/en/blog/my-passion-is-accounting-and-tax-returns-miodrag-milic/
+14:27:01	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=1537
+14:27:01	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=1537 to https://advensys-conseil.lu/en/blog/my-passion-is-accounting-andreia-dias/
+14:27:01	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=1458
+14:27:01	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=1458 to https://advensys-conseil.lu/en/blog/5-conseils-pour-choisir-le-cabinet-comptable-parfait-pour-vous/
+14:27:01	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=959
+14:27:01	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=959 to https://advensys-conseil.lu/en/blog/les-avantages-de-la-comptabilite-informatisee/
+14:27:01	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=998
+14:27:01	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=998 to https://advensys-conseil.lu/en/blog/luxembourg-tax-return-for-individuals-deduction/
+14:27:01	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=953
+14:27:01	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=953 to https://advensys-conseil.lu/en/blog/luxembourg-tax-return-for-individuals-list-of-documents/
+14:27:01	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=1787
+14:27:01	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=1787 to https://advensys-conseil.lu/en/blog/successful-new-product/
+14:27:01	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=1763
+14:27:01	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=1763 to https://advensys-conseil.lu/en/blog/advantages-of-setting-up-your-company-in-luxembourg/
+14:27:01	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=1684
+14:27:01	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=1684 to https://advensys-conseil.lu/en/blog/how-to-become-entrepreneur/
+14:27:01	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=1654
+14:27:01	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=1654 to https://advensys-conseil.lu/en/blog/what-are-the-5-ps-of-marketing/
+14:27:01	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/?p=995
+14:27:01	Warning: 	File has moved from https://advensys-conseil.lu/en/?p=995 to https://advensys-conseil.lu/en/blog/why-luxembourg-is-your-payment-hub-in-the-eu/
+14:27:01	Warning: 	Moved Permanently for https://advensys-conseil.lu/?p=995
+14:27:01	Warning: 	File has moved from https://advensys-conseil.lu/?p=995 to https://advensys-conseil.lu/blog/why-luxembourg-is-your-payment-hub-in-the-eu/
+14:27:01	Warning: 	Moved Permanently for https://advensys-conseil.lu/en/category/blog/business/page/1/
+14:27:01	Warning: 	File has moved from https://advensys-conseil.lu/en/category/blog/business/page/1/ to https://advensys-conseil.lu/en/category/blog/business/
+
+HTTrack Website Copier/3.49-2 mirror complete in 18 minutes 17 seconds : 318 links scanned, 199 files written (14651874 bytes overall) [9488381 bytes received at 8649 bytes/sec], 6935726 bytes transferred using HTTP compression in 139 files, ratio 20%, 1.8 requests per connection
+(12 errors, 212 warnings, 0 messages)
