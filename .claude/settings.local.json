@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m http.server:*)",
+      "Bash(for:*)",
+      "Bash(do)",
+      "Bash(if [ ! -f \"$file\" ])",
+      "Bash(then echo \"MISSING: $file\")",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(timeout:*)",
+      "Bash(findstr:*)"
+    ]
+  }
+}
