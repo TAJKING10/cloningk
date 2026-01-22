@@ -9,7 +9,9 @@
       "Bash(fi)",
       "Bash(done)",
       "Bash(timeout:*)",
-      "Bash(findstr:*)"
+      "Bash(findstr:*)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\update-coaching.ps1\")",
+      "Bash(del \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\update-coaching.ps1\")"
     ]
   }
 }
