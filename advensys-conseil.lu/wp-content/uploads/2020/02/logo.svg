@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B63F6"/>
+      <stop offset="100%" style="stop-color:#003CC5"/>
+    </linearGradient>
+  </defs>
+  <rect x="5" y="10" width="40" height="40" rx="8" fill="url(#logoGrad)"/>
+  <text x="15" y="38" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">A</text>
+  <text x="55" y="38" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#00226E">Advensys</text>
+  <text x="55" y="52" font-family="Arial, sans-serif" font-size="12" fill="#666">Conseil</text>
+</svg>

@@ -69,78 +69,202 @@
   line-height: 1.6;
 }
 
-/* Category Filter */
+/* Category Filter - Premium Corporate Design */
 .blog-filters {
-  background: #fff;
-  padding: 30px 0;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  padding: 28px 0;
+  box-shadow: 0 4px 30px rgba(0,34,110,0.08), 0 1px 3px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 1px solid rgba(0,34,110,0.06);
 }
 
 .filter-container {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .filter-label {
   font-weight: 700;
   color: #00226E;
-  font-size: 16px;
+  font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  position: relative;
+  padding-right: 20px;
+}
+
+.filter-label::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 24px;
+  background: linear-gradient(180deg, transparent, #c9a227, transparent);
 }
 
 .filter-buttons {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
+/* Base Filter Button - Premium Pill Style */
 .filter-btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 28px;
   border-radius: 50px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
+  letter-spacing: 0.3px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 
-.filter-btn.active {
-  background: linear-gradient(135deg, #c9a227 0%, #e8b923 100%);
-  color: #fff;
-  box-shadow: 0 4px 15px rgba(201,162,39,0.3);
-}
-
-.filter-btn:not(.active) {
-  background: #f5f7fa;
+  /* Default inactive state - premium subtle look */
+  background: linear-gradient(145deg, #ffffff 0%, #f5f7fa 100%);
   color: #00226E;
-  border-color: #e0e5ec;
+  border: 1.5px solid rgba(0,34,110,0.12);
+  box-shadow:
+    0 2px 8px rgba(0,34,110,0.06),
+    0 1px 2px rgba(0,0,0,0.04),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+
+  /* Smooth transitions */
+  transition:
+    all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.3s ease;
 }
 
+/* Shimmer effect overlay */
+.filter-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.4),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+/* Hover State - Premium Blue Gradient */
 .filter-btn:not(.active):hover {
   background: linear-gradient(135deg, #0B63F6 0%, #003CC5 100%);
-  color: #fff;
+  color: #ffffff;
   border-color: transparent;
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow:
+    0 8px 25px rgba(11,99,246,0.35),
+    0 4px 10px rgba(0,60,197,0.2),
+    inset 0 1px 0 rgba(255,255,255,0.2);
 }
 
-.filter-btn img {
+.filter-btn:not(.active):hover::before {
+  left: 100%;
+}
+
+/* Active State - Gold Gradient (matches "Tout" premium look) */
+.filter-btn.active {
+  background: linear-gradient(135deg, #c9a227 0%, #dbb42e 50%, #e8c33a 100%);
+  color: #ffffff;
+  border-color: transparent;
+  font-weight: 700;
+  box-shadow:
+    0 6px 20px rgba(201,162,39,0.4),
+    0 3px 8px rgba(201,162,39,0.25),
+    inset 0 1px 0 rgba(255,255,255,0.3),
+    inset 0 -1px 0 rgba(0,0,0,0.1);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.filter-btn.active::before {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.3),
+    transparent
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Focus state for accessibility */
+.filter-btn:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 3px rgba(11,99,246,0.3),
+    0 4px 15px rgba(0,34,110,0.15);
+}
+
+/* Icon Styles */
+.filter-btn .filter-icon {
   width: 18px;
   height: 18px;
-  filter: brightness(0) invert(0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.filter-btn.active img,
-.filter-btn:hover img {
-  filter: brightness(0) invert(1);
+.filter-btn .filter-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Icon colors */
+.filter-btn:not(.active) .filter-icon svg {
+  fill: #00226E;
+  opacity: 0.7;
+}
+
+.filter-btn:not(.active):hover .filter-icon svg,
+.filter-btn.active .filter-icon svg {
+  fill: #ffffff;
+  opacity: 1;
+}
+
+.filter-btn:hover .filter-icon {
+  transform: scale(1.1);
+}
+
+/* Button text */
+.filter-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Active indicator dot */
+.filter-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background: #c9a227;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(201,162,39,0.4);
 }
 
 /* Blog Grid */
@@ -163,7 +287,12 @@
 @media (max-width: 680px) {
   .blog-grid { grid-template-columns: 1fr; }
   .blog-hero h1 { font-size: 32px; }
-  .filter-container { flex-direction: column; align-items: flex-start; }
+  .filter-container { flex-direction: column; align-items: flex-start; gap: 15px; }
+  .filter-label { padding-right: 0; margin-bottom: 5px; }
+  .filter-label::after { display: none; }
+  .filter-buttons { gap: 8px; width: 100%; }
+  .filter-btn { padding: 12px 18px; font-size: 13px; flex: 1; min-width: calc(50% - 4px); justify-content: center; }
+  .filter-btn .filter-icon { width: 16px; height: 16px; }
 }
 
 /* Blog Card */
@@ -424,7 +553,7 @@
 <header>
 <div class="container">
 <div class="container-lang">
-<div class="menu-btn"> <img src="https://advensys-conseil.lu/wp-content/themes/konseil/assets/img/icon/menu.svg" alt="btn"></div>
+<div class="menu-btn"> <img src="../../wp-content/themes/konseil/assets/img/icon/menu.svg" alt="btn"></div>
 <div>
 <ul class="lang-menu">
 <li class="menu-item menu_item_wpglobus_menu_switch wpglobus-selector-link wpglobus-current-language">
@@ -438,7 +567,7 @@
 </div>
 <div class="logo-phone-container">
 <a href="../../index.html" class="logo-box">
-<img src="https://advensys-conseil.lu/wp-content/uploads/2020/02/logo.png" alt="Advensys Conseil" style="max-height:60px;">
+<img src="../../wp-content/uploads/2020/02/logo.png" alt="Advensys Conseil" style="max-height:60px;">
 </a>
 <div class="phone-box">
 <a href="https://wa.me/352661112260" class="phone-link">+352 661 11 22 60</a>
@@ -487,13 +616,28 @@
 <section class="blog-filters">
 <div class="container">
 <div class="filter-container">
-<span class="filter-label">Filtrer par :</span>
+<span class="filter-label">Filtrer par</span>
 <div class="filter-buttons">
-<a href="index.html" class="filter-btn active">Tout</a>
-<a href="business/index.html" class="filter-btn">Entreprise</a>
-<a href="accounting/index.html" class="filter-btn">Comptabilite</a>
-<a href="taxes/index.html" class="filter-btn">Taxes</a>
-<a href="fund/index.html" class="filter-btn">Fonds</a>
+<a href="index.html" class="filter-btn active">
+<span class="filter-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg></span>
+<span>Tout</span>
+</a>
+<a href="business/index.html" class="filter-btn">
+<span class="filter-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 7h-4V5l-2-2h-4L8 5v2H4c-1.1 0-2 .9-2 2v5c0 .75.4 1.38 1 1.73V19c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2v-3.28c.59-.35 1-.99 1-1.72V9c0-1.1-.9-2-2-2zM10 5h4v2h-4V5zM4 9h16v5h-5v-3H9v3H4V9zm9 6h-2v2h2v-2zm6 4H5v-3h4v1h6v-1h4v3z"/></svg></span>
+<span>Entreprise</span>
+</a>
+<a href="accounting/index.html" class="filter-btn">
+<span class="filter-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 12h2v5H7zm4-3h2v8h-2zm4-3h2v11h-2z"/></svg></span>
+<span>Comptabilite</span>
+</a>
+<a href="taxes/index.html" class="filter-btn">
+<span class="filter-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg></span>
+<span>Taxes</span>
+</a>
+<a href="fund/index.html" class="filter-btn">
+<span class="filter-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg></span>
+<span>Fonds</span>
+</a>
 </div>
 </div>
 </div>
@@ -512,7 +656,7 @@
 <article class="blog-card">
 <div class="blog-card-image">
 <a href="../../blog/business/the-advantages-and-disadvantages-of-incorporating-in-luxembourg/index.html">
-<img src="https://advensys-conseil.lu/wp-content/uploads/2023/05/architecture-g2fdc1b839_1280.jpg" alt="Avantages et inconvenients d'implantation au Luxembourg">
+<img src="../../wp-content/uploads/2023/05/architecture-g2fdc1b839_1280.jpg" alt="Avantages et inconvenients d'implantation au Luxembourg">
 </a>
 <span class="blog-card-category">Entreprise</span>
 </div>
@@ -530,7 +674,7 @@
 <article class="blog-card">
 <div class="blog-card-image">
 <a href="../../blog/business/les-meilleurs-secteurs-pour-creer-une-entreprise-au-luxembourg/index.html">
-<img src="https://advensys-conseil.lu/wp-content/uploads/2023/03/low-angle-grayscale-shot-business-building.jpg" alt="Meilleurs secteurs au Luxembourg">
+<img src="../../wp-content/uploads/2023/03/low-angle-grayscale-shot-business-building.jpg" alt="Meilleurs secteurs au Luxembourg">
 </a>
 <span class="blog-card-category">Entreprise</span>
 </div>
@@ -548,7 +692,7 @@
 <article class="blog-card">
 <div class="blog-card-image">
 <a href="../../blog/luxembourg-tax-return-for-individuals-deduction/index.html">
-<img src="https://advensys-conseil.lu/wp-content/uploads/2022/09/pexels-nataliya-vaitkevich-6863254-scaled.jpg" alt="Declaration fiscale Luxembourg">
+<img src="../../wp-content/uploads/2022/09/pexels-nataliya-vaitkevich-6863254-scaled.jpg" alt="Declaration fiscale Luxembourg">
 </a>
 <span class="blog-card-category">Taxes</span>
 </div>
@@ -566,7 +710,7 @@
 <article class="blog-card">
 <div class="blog-card-image">
 <a href="../../blog/accounting-internal-or-accounting-external/index.html">
-<img src="https://advensys-conseil.lu/wp-content/uploads/2022/04/accounting-e1650531220563.png" alt="Comptabilite interne ou externe">
+<img src="../../wp-content/uploads/2022/04/accounting-e1650531220563.png" alt="Comptabilite interne ou externe">
 </a>
 <span class="blog-card-category">Comptabilite</span>
 </div>
@@ -584,7 +728,7 @@
 <article class="blog-card">
 <div class="blog-card-image">
 <a href="../../blog/steps-for-setting-up-a-company-in-luxembourg/index.html">
-<img src="https://advensys-conseil.lu/wp-content/uploads/2022/04/steps.jpg" alt="Etapes creation entreprise">
+<img src="../../wp-content/uploads/2022/04/steps.jpg" alt="Etapes creation entreprise">
 </a>
 <span class="blog-card-category">Entreprise</span>
 </div>
@@ -602,7 +746,7 @@
 <article class="blog-card">
 <div class="blog-card-image">
 <a href="../../blog/advantages-of-setting-up-your-company-in-luxembourg/index.html">
-<img src="https://advensys-conseil.lu/wp-content/uploads/2022/04/advensys.png" alt="Avantages Luxembourg">
+<img src="../../wp-content/uploads/2022/04/advensys.png" alt="Avantages Luxembourg">
 </a>
 <span class="blog-card-category">Entreprise</span>
 </div>
@@ -650,7 +794,7 @@
 <div class="footer-container">
 <div class="footer-box-info">
 <div class="footer-info-text">
-<img src="https://advensys-conseil.lu/wp-content/uploads/2020/02/logo.svg" class="logo-footer" alt="logo">
+<img src="../../wp-content/uploads/2020/02/logo.svg" class="logo-footer" alt="logo">
 <p class="text-sm">Advensys Conseil est un cabinet comptable fournissant egalement des services d'optimisation fiscale et de conseil.</p>
 <a href="tel:+35228797626" class="phone">+352 28 79 76 26</a>
 <a href="https://wa.me/352661112260" class="ws">+352 661 11 22 60</a>
@@ -672,7 +816,7 @@
 <div class="footer-about">
 <p class="about-footer-text">La marque "Advensys Conseil" est enregistree par<br>Groupe Advensys Luxembourg S.A.<br><br>Registre du commerce: B 197138<br><br>Autorise par le ministere<br>de l'economie : 10059637/1<br>10059637/0</p>
 </div>
-<img src="https://advensys-conseil.lu/wp-content/themes/konseil/assets/img/icon/arr-top.svg" class="click-top" alt="Scroll top" onclick="window.scrollTo({top:0,behavior:'smooth'});" style="cursor:pointer;">
+<img src="../../wp-content/themes/konseil/assets/img/icon/arr-top.svg" class="click-top" alt="Scroll top" onclick="window.scrollTo({top:0,behavior:'smooth'});" style="cursor:pointer;">
 </div>
 </div>
 </footer>
