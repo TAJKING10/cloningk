@@ -15,12 +15,11 @@
 <link href='https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700,900&display=swap' rel='stylesheet'>
 <link rel="stylesheet" type="text/css" href="../../../wp-content/cache/wpfc-minified/9iiasxt9/60492.css" media="all"/>
 <style>
-/* Blog Page Styles */
 * { box-sizing: border-box; }
 
 .blog-hero {
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-  padding: 120px 0 80px;
+  padding: 140px 0 100px;
   position: relative;
   overflow: hidden;
 }
@@ -28,394 +27,120 @@
 .blog-hero::before {
   content: '';
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="80" cy="20" r="40" fill="rgba(201,162,39,0.1)"/><circle cx="90" cy="70" r="30" fill="rgba(11,99,246,0.1)"/></svg>');
-  background-size: cover;
-}
-
-.blog-hero .container {
-  position: relative;
-  z-index: 1;
-}
-
-.blog-hero-content {
-  max-width: 600px;
-}
-
-.blog-hero-label {
-  color: #c9a227;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-bottom: 15px;
-  display: block;
-}
-
-.blog-hero h1 {
-  color: #fff;
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
-
-.blog-hero p {
-  color: #aaa;
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* Category Filter */
-.blog-filters {
-  background: #fff;
-  padding: 30px 0;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.filter-container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.filter-label {
-  font-weight: 700;
-  color: #00226E;
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.filter-buttons {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.filter-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-
-.filter-btn.active {
-  background: linear-gradient(135deg, #c9a227 0%, #e8b923 100%);
-  color: #fff;
-  box-shadow: 0 4px 15px rgba(201,162,39,0.3);
-}
-
-.filter-btn:not(.active) {
-  background: #f5f7fa;
-  color: #00226E;
-  border-color: #e0e5ec;
-}
-
-.filter-btn:not(.active):hover {
-  background: linear-gradient(135deg, #0B63F6 0%, #003CC5 100%);
-  color: #fff;
-  border-color: transparent;
-  transform: translateY(-2px);
-}
-
-.filter-btn img {
-  width: 18px;
-  height: 18px;
-  filter: brightness(0) invert(0.3);
-}
-
-.filter-btn.active img,
-.filter-btn:hover img {
-  filter: brightness(0) invert(1);
-}
-
-/* Blog Grid */
-.blog-section {
-  background: #f8f9fc;
-  padding: 60px 0 80px;
-}
-
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-top: 40px;
-}
-
-@media (max-width: 1024px) {
-  .blog-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 680px) {
-  .blog-grid { grid-template-columns: 1fr; }
-  .blog-hero h1 { font-size: 32px; }
-  .filter-container { flex-direction: column; align-items: flex-start; }
-}
-
-/* Blog Card */
-.blog-card {
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  transition: all 0.4s ease;
-  display: flex;
-  flex-direction: column;
-}
-
-.blog-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-}
-
-.blog-card-image {
-  position: relative;
-  height: 200px;
-  overflow: hidden;
-}
-
-.blog-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.blog-card:hover .blog-card-image img {
-  transform: scale(1.1);
-}
-
-.blog-card-category {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  background: linear-gradient(135deg, #0B63F6 0%, #003CC5 100%);
-  color: #fff;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.blog-card-content {
-  padding: 25px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.blog-card-date {
-  color: #0B63F6;
-  font-size: 13px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.blog-card-title {
-  font-size: 20px;
-  font-weight: 700;
-  color: #00226E;
-  margin-bottom: 12px;
-  line-height: 1.4;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.blog-card-title a {
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.blog-card-title a:hover {
-  color: #0B63F6;
-}
-
-.blog-card-excerpt {
-  color: #666;
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  flex: 1;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.blog-card-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: #c9a227;
-  font-weight: 600;
-  font-size: 14px;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-}
-
-.blog-card-link:hover {
-  color: #0B63F6;
-  gap: 12px;
-}
-
-.blog-card-link::after {
-  content: '→';
-  transition: transform 0.3s ease;
-}
-
-.blog-card:hover .blog-card-link::after {
-  transform: translateX(4px);
-}
-
-/* Newsletter Section */
-.newsletter-section {
-  background: linear-gradient(135deg, #0B63F6 0%, #003CC5 100%);
-  padding: 60px 0;
-}
-
-.newsletter-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.newsletter-text h3 {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.newsletter-text p {
-  color: rgba(255,255,255,0.8);
-  font-size: 16px;
-}
-
-.newsletter-form {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.newsletter-form input[type="email"] {
-  padding: 15px 25px;
-  border: none;
-  border-radius: 50px;
-  font-size: 16px;
-  min-width: 300px;
-  outline: none;
-}
-
-.newsletter-form button {
-  background: linear-gradient(135deg, #c9a227 0%, #e8b923 100%);
-  color: #fff;
-  border: none;
-  padding: 15px 35px;
-  border-radius: 50px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.newsletter-form button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(201,162,39,0.4);
-}
-
-/* Pagination */
-.pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: 50px;
-}
-
-.pagination a, .pagination span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(201,162,39,0.15) 0%, transparent 70%);
   border-radius: 50%;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
 }
 
-.pagination a {
-  background: #fff;
-  color: #00226E;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+.blog-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  right: 20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(11,99,246,0.1) 0%, transparent 70%);
+  border-radius: 50%;
 }
 
-.pagination a:hover {
-  background: linear-gradient(135deg, #0B63F6 0%, #003CC5 100%);
-  color: #fff;
-  transform: translateY(-2px);
-}
+.blog-hero .container { position: relative; z-index: 1; }
+.blog-hero-content { max-width: 650px; }
 
-.pagination span.current {
-  background: linear-gradient(135deg, #c9a227 0%, #e8b923 100%);
-  color: #fff;
-  box-shadow: 0 4px 15px rgba(201,162,39,0.3);
-}
-
-.pagination .next-btn {
-  width: auto;
-  padding: 0 25px;
-  border-radius: 25px;
+.blog-hero-badge {
+  display: inline-flex;
+  align-items: center;
   gap: 8px;
-}
-
-/* Section Title */
-.section-header {
-  text-align: center;
+  background: rgba(201,162,39,0.15);
+  border: 1px solid rgba(201,162,39,0.3);
+  padding: 8px 16px;
+  border-radius: 50px;
   margin-bottom: 20px;
 }
 
-.section-header h2 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #00226E;
-  margin-bottom: 10px;
-}
+.blog-hero-badge span { color: #c9a227; font-size: 13px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; }
 
-.section-header p {
-  color: #666;
-  font-size: 18px;
-}
+.blog-hero h1 { color: #fff; font-size: 52px; font-weight: 700; margin-bottom: 20px; line-height: 1.15; }
+.blog-hero h1 span { background: linear-gradient(135deg, #c9a227 0%, #e8b923 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.blog-hero p { color: #b0b0b0; font-size: 18px; line-height: 1.7; margin-bottom: 30px; }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .newsletter-container { flex-direction: column; text-align: center; }
-  .newsletter-form { justify-content: center; width: 100%; }
-  .newsletter-form input[type="email"] { min-width: 100%; }
-  .filter-buttons { justify-content: center; width: 100%; }
-}
+.blog-hero-stats { display: flex; gap: 40px; margin-top: 40px; }
+.stat-item { text-align: center; }
+.stat-number { display: block; font-size: 36px; font-weight: 700; color: #c9a227; line-height: 1; }
+.stat-label { color: #888; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; }
+
+.blog-filters { background: #fff; padding: 25px 0; box-shadow: 0 4px 30px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #eee; }
+.filter-container { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.filter-label { font-weight: 700; color: #00226E; font-size: 15px; text-transform: uppercase; letter-spacing: 1px; }
+.filter-buttons { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.filter-btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 50px; font-size: 14px; font-weight: 600; text-decoration: none; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent; }
+.filter-btn svg { width: 16px; height: 16px; }
+.filter-btn.active { background: linear-gradient(135deg, #c9a227 0%, #e8b923 100%); color: #fff; box-shadow: 0 4px 20px rgba(201,162,39,0.35); }
+.filter-btn:not(.active) { background: #f8f9fc; color: #00226E; border-color: #e8ecf3; }
+.filter-btn:not(.active):hover { background: linear-gradient(135deg, #0B63F6 0%, #003CC5 100%); color: #fff; border-color: transparent; transform: translateY(-2px); box-shadow: 0 4px 20px rgba(11,99,246,0.3); }
+
+.blog-section { background: linear-gradient(180deg, #f8f9fc 0%, #fff 100%); padding: 80px 0 100px; }
+.section-header { text-align: center; margin-bottom: 50px; }
+.section-header h2 { font-size: 40px; font-weight: 700; color: #00226E; margin-bottom: 15px; }
+.section-header p { color: #666; font-size: 18px; max-width: 500px; margin: 0 auto; }
+
+.blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 35px; }
+
+@media (max-width: 1024px) { .blog-grid { grid-template-columns: repeat(2, 1fr); gap: 25px; } }
+@media (max-width: 680px) { .blog-grid { grid-template-columns: 1fr; } .blog-hero h1 { font-size: 36px; } .blog-hero { padding: 120px 0 60px; } .filter-container { flex-direction: column; align-items: flex-start; } .blog-hero-stats { gap: 25px; } .stat-number { font-size: 28px; } }
+
+.blog-card { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); display: flex; flex-direction: column; border: 1px solid rgba(0,0,0,0.05); }
+.blog-card:hover { transform: translateY(-12px); box-shadow: 0 25px 60px rgba(0,0,0,0.15); }
+
+.blog-card-image { position: relative; height: 220px; overflow: hidden; }
+.blog-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+.blog-card:hover .blog-card-image img { transform: scale(1.08); }
+
+.blog-card-category { position: absolute; top: 15px; left: 15px; background: linear-gradient(135deg, #0B63F6 0%, #003CC5 100%); color: #fff; padding: 8px 16px; border-radius: 25px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(11,99,246,0.3); }
+.blog-card-category.taxes { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); box-shadow: 0 4px 15px rgba(231,76,60,0.3); }
+.blog-card-category.accounting { background: linear-gradient(135deg, #27ae60 0%, #1e8449 100%); box-shadow: 0 4px 15px rgba(39,174,96,0.3); }
+.blog-card-category.coaching { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); box-shadow: 0 4px 15px rgba(155,89,182,0.3); }
+.blog-card-category.fund { background: linear-gradient(135deg, #f39c12 0%, #d68910 100%); box-shadow: 0 4px 15px rgba(243,156,18,0.3); }
+
+.blog-card-content { padding: 28px; flex: 1; display: flex; flex-direction: column; }
+.blog-card-date { display: flex; align-items: center; gap: 8px; color: #0B63F6; font-size: 13px; font-weight: 600; margin-bottom: 12px; }
+.blog-card-date svg { width: 14px; height: 14px; }
+
+.blog-card-title { font-size: 20px; font-weight: 700; color: #00226E; margin-bottom: 15px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.blog-card-title a { color: inherit; text-decoration: none; transition: color 0.3s ease; }
+.blog-card-title a:hover { color: #0B63F6; }
+
+.blog-card-excerpt { color: #666; font-size: 15px; line-height: 1.7; margin-bottom: 20px; flex: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+.blog-card-footer { display: flex; justify-content: space-between; align-items: center; padding-top: 20px; border-top: 1px solid #f0f0f0; }
+.blog-card-link { display: inline-flex; align-items: center; gap: 8px; color: #c9a227; font-weight: 700; font-size: 14px; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease; }
+.blog-card-link svg { width: 18px; height: 18px; transition: transform 0.3s ease; }
+.blog-card-link:hover { color: #0B63F6; }
+.blog-card-link:hover svg { transform: translateX(5px); }
+.blog-card-read-time { display: flex; align-items: center; gap: 5px; color: #999; font-size: 13px; }
+
+.newsletter-section { background: linear-gradient(135deg, #0B63F6 0%, #003CC5 100%); padding: 80px 0; position: relative; overflow: hidden; }
+.newsletter-section::before { content: ''; position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); border-radius: 50%; }
+.newsletter-container { display: flex; align-items: center; justify-content: space-between; gap: 50px; flex-wrap: wrap; position: relative; z-index: 1; }
+.newsletter-text h3 { color: #fff; font-size: 32px; font-weight: 700; margin-bottom: 12px; }
+.newsletter-text p { color: rgba(255,255,255,0.8); font-size: 17px; max-width: 400px; }
+.newsletter-form { display: flex; gap: 15px; flex-wrap: wrap; }
+.newsletter-form input[type="email"] { padding: 18px 28px; border: none; border-radius: 50px; font-size: 16px; min-width: 320px; outline: none; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+.newsletter-form input[type="email"]:focus { box-shadow: 0 5px 30px rgba(0,0,0,0.2); }
+.newsletter-form button { background: linear-gradient(135deg, #c9a227 0%, #e8b923 100%); color: #fff; border: none; padding: 18px 40px; border-radius: 50px; font-size: 16px; font-weight: 700; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px; }
+.newsletter-form button:hover { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(201,162,39,0.4); }
+
+.pagination { display: flex; justify-content: center; align-items: center; gap: 12px; margin-top: 60px; }
+.pagination a, .pagination span { display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; font-weight: 700; font-size: 16px; text-decoration: none; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+.pagination a { background: #fff; color: #00226E; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border: 2px solid transparent; }
+.pagination a:hover { background: linear-gradient(135deg, #0B63F6 0%, #003CC5 100%); color: #fff; transform: translateY(-3px); box-shadow: 0 8px 25px rgba(11,99,246,0.3); }
+.pagination span.current { background: linear-gradient(135deg, #c9a227 0%, #e8b923 100%); color: #fff; box-shadow: 0 6px 20px rgba(201,162,39,0.35); }
+.pagination .next-btn { width: auto; padding: 0 30px; border-radius: 30px; gap: 10px; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+
+@media (max-width: 768px) { .newsletter-container { flex-direction: column; text-align: center; } .newsletter-text p { max-width: 100%; } .newsletter-form { justify-content: center; width: 100%; } .newsletter-form input[type="email"] { min-width: 100%; } .filter-buttons { justify-content: center; width: 100%; } .section-header h2 { font-size: 32px; } }
 </style>
 </head>
 <body>
@@ -423,7 +148,7 @@
 <header>
 <div class="container">
 <div class="container-lang">
-<div class="menu-btn"> <img src="https://advensys-conseil.lu/wp-content/themes/konseil/assets/img/icon/menu.svg" alt="btn"></div>
+<div class="menu-btn"><img src="https://advensys-conseil.lu/wp-content/themes/konseil/assets/img/icon/menu.svg" alt="Menu"></div>
 <div>
 <ul class="lang-menu">
 <li class="menu-item menu_item_wpglobus_menu_switch wpglobus-selector-link wpglobus-current-language">
@@ -443,12 +168,8 @@
 <a href="https://wa.me/352661112260" class="phone-link">+352 661 11 22 60</a>
 <span class="phone-call">Free callback</span>
 <span style="display:inline-flex;align-items:center;gap:8px;vertical-align:middle;">
-<a href="https://fr-fr.facebook.com/AdvensysConseil/" target="_blank" style="display:inline-flex;align-items:center;">
-<img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" style="width:24px;height:24px;">
-</a>
-<a href="https://www.linkedin.com/company/advensys-international-trading/posts/?feedView=all" target="_blank" style="display:inline-flex;align-items:center;">
-<img src="https://cdn-icons-png.flaticon.com/24/733/733561.png" alt="LinkedIn" style="width:24px;height:24px;">
-</a>
+<a href="https://fr-fr.facebook.com/AdvensysConseil/" target="_blank" style="display:inline-flex;align-items:center;"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" style="width:24px;height:24px;"></a>
+<a href="https://www.linkedin.com/company/advensys-international-trading/posts/?feedView=all" target="_blank" style="display:inline-flex;align-items:center;"><img src="https://cdn-icons-png.flaticon.com/24/733/733561.png" alt="LinkedIn" style="width:24px;height:24px;"></a>
 </span>
 </div>
 </div>
@@ -458,9 +179,9 @@
 <li class="menu-item"><a href="../../about/index.html">About</a></li>
 <li class="menu-item menu-item-has-children"><a href="../../main-page/services/index.html">Services</a>
 <ul class="sub-menu">
-<li class="menu-item"><a href="../../main-page/services/for-private-people-luxembourg/index.html">For Individuals</a></li>
+<li class="menu-item"><a href="../../main-page/services/for-private-people-luxembourg/index.html">For individuals</a></li>
 <li class="menu-item"><a href="../../main-page/services/accounting/index.html">Accounting</a></li>
-<li class="menu-item"><a href="../../main-page/services/tax-advice/index.html">Tax Advice</a></li>
+<li class="menu-item"><a href="../../main-page/services/tax-advice/index.html">Tax advice</a></li>
 </ul>
 </li>
 <li class="menu-item current-menu-item"><a href="index.html" aria-current="page">Blog</a></li>
@@ -471,24 +192,42 @@
 </header>
 
 <main>
-<!-- Hero Section -->
 <section class="blog-hero">
 <div class="container">
 <div class="blog-hero-content">
-<span class="blog-hero-label">Our Blog</span>
-<h1>News, Insights & Expertise</h1>
-<p>Discover our articles on accounting, taxation, business and entrepreneurship in Luxembourg. Expert advice to support your success.</p>
+<div class="blog-hero-badge">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a227" stroke-width="2"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+<span>Our Blog</span>
+</div>
+<h1>News, Tips & <span>Expertise</span></h1>
+<p>Discover our articles on accounting, taxation, business and entrepreneurship in Luxembourg. Expert advice to support your professional success.</p>
+<div class="blog-hero-stats">
+<div class="stat-item">
+<span class="stat-number">20+</span>
+<span class="stat-label">Articles</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">5</span>
+<span class="stat-label">Categories</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">10+</span>
+<span class="stat-label">Years of expertise</span>
+</div>
+</div>
 </div>
 </div>
 </section>
 
-<!-- Category Filters -->
 <section class="blog-filters">
 <div class="container">
 <div class="filter-container">
 <span class="filter-label">Filter by:</span>
 <div class="filter-buttons">
-<a href="index.html" class="filter-btn active">All</a>
+<a href="index.html" class="filter-btn active">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+All
+</a>
 <a href="business/index.html" class="filter-btn">Business</a>
 <a href="accounting/index.html" class="filter-btn">Accounting</a>
 <a href="taxes/index.html" class="filter-btn">Taxes</a>
@@ -498,34 +237,35 @@
 </div>
 </section>
 
-<!-- Blog Grid -->
 <section class="blog-section">
 <div class="container">
 <div class="section-header">
 <h2>Latest Articles</h2>
-<p>Stay informed of the latest news and trends</p>
+<p>Stay informed about the latest news and trends in the business world</p>
 </div>
 
 <div class="blog-grid">
-<!-- Article 1 -->
 <article class="blog-card">
 <div class="blog-card-image">
 <a href="../../blog/business/the-advantages-and-disadvantages-of-incorporating-in-luxembourg/index.html">
-<img src="https://advensys-conseil.lu/wp-content/uploads/2023/05/architecture-g2fdc1b839_1280.jpg" alt="Advantages and disadvantages of incorporating in Luxembourg">
+<img src="https://advensys-conseil.lu/wp-content/uploads/2023/05/architecture-g2fdc1b839_1280.jpg" alt="Advantages and disadvantages of setting up in Luxembourg">
 </a>
 <span class="blog-card-category">Business</span>
 </div>
 <div class="blog-card-content">
-<span class="blog-card-date">May 4, 2023</span>
-<h3 class="blog-card-title">
-<a href="../../blog/business/the-advantages-and-disadvantages-of-incorporating-in-luxembourg/index.html">Advantages and Disadvantages of Incorporating a Company in Luxembourg</a>
-</h3>
-<p class="blog-card-excerpt">Incorporating a company in Luxembourg has become a popular choice for businesses seeking to expand their operations in Europe.</p>
-<a href="../../blog/business/the-advantages-and-disadvantages-of-incorporating-in-luxembourg/index.html" class="blog-card-link">Read More</a>
+<span class="blog-card-date">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+May 4, 2023
+</span>
+<h3 class="blog-card-title"><a href="../../blog/business/the-advantages-and-disadvantages-of-incorporating-in-luxembourg/index.html">Advantages and disadvantages of setting up a company in Luxembourg</a></h3>
+<p class="blog-card-excerpt">Incorporating a company in Luxembourg has become a popular choice for businesses looking to expand their operations in Europe.</p>
+<div class="blog-card-footer">
+<a href="../../blog/business/the-advantages-and-disadvantages-of-incorporating-in-luxembourg/index.html" class="blog-card-link">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+<span class="blog-card-read-time">5 min</span>
+</div>
 </div>
 </article>
 
-<!-- Article 2 -->
 <article class="blog-card">
 <div class="blog-card-image">
 <a href="../../blog/business/les-meilleurs-secteurs-pour-creer-une-entreprise-au-luxembourg/index.html">
@@ -534,106 +274,120 @@
 <span class="blog-card-category">Business</span>
 </div>
 <div class="blog-card-content">
-<span class="blog-card-date">March 17, 2023</span>
-<h3 class="blog-card-title">
-<a href="../../blog/business/les-meilleurs-secteurs-pour-creer-une-entreprise-au-luxembourg/index.html">The Best Sectors to Start a Business in Luxembourg</a>
-</h3>
+<span class="blog-card-date">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+March 17, 2023
+</span>
+<h3 class="blog-card-title"><a href="../../blog/business/les-meilleurs-secteurs-pour-creer-une-entreprise-au-luxembourg/index.html">The best sectors to start a business in Luxembourg</a></h3>
 <p class="blog-card-excerpt">Luxembourg is an excellent place to start a business, with a thriving economy and a favorable business environment.</p>
-<a href="../../blog/business/les-meilleurs-secteurs-pour-creer-une-entreprise-au-luxembourg/index.html" class="blog-card-link">Read More</a>
+<div class="blog-card-footer">
+<a href="../../blog/business/les-meilleurs-secteurs-pour-creer-une-entreprise-au-luxembourg/index.html" class="blog-card-link">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+<span class="blog-card-read-time">6 min</span>
+</div>
 </div>
 </article>
 
-<!-- Article 3 -->
 <article class="blog-card">
 <div class="blog-card-image">
 <a href="../../blog/luxembourg-tax-return-for-individuals-deduction/index.html">
-<img src="https://advensys-conseil.lu/wp-content/uploads/2022/09/pexels-nataliya-vaitkevich-6863254-scaled.jpg" alt="Tax return Luxembourg">
+<img src="https://advensys-conseil.lu/wp-content/uploads/2022/09/handshake-business-men-concept-e1663338389220.jpg" alt="Luxembourg Tax Return">
 </a>
-<span class="blog-card-category">Taxes</span>
+<span class="blog-card-category taxes">Taxes</span>
 </div>
 <div class="blog-card-content">
-<span class="blog-card-date">September 14, 2022</span>
-<h3 class="blog-card-title">
-<a href="../../blog/luxembourg-tax-return-for-individuals-deduction/index.html">Luxembourg Tax Return for Individuals - Deductions</a>
-</h3>
-<p class="blog-card-excerpt">Discover the various tax deductions available for individuals in Luxembourg and optimize your tax return.</p>
-<a href="../../blog/luxembourg-tax-return-for-individuals-deduction/index.html" class="blog-card-link">Read More</a>
+<span class="blog-card-date">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+September 14, 2022
+</span>
+<h3 class="blog-card-title"><a href="../../blog/luxembourg-tax-return-for-individuals-deduction/index.html">Tax return in Luxembourg for individuals - Deductions</a></h3>
+<p class="blog-card-excerpt">Discover the different tax deductions available for individuals in Luxembourg and optimize your tax return.</p>
+<div class="blog-card-footer">
+<a href="../../blog/luxembourg-tax-return-for-individuals-deduction/index.html" class="blog-card-link">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+<span class="blog-card-read-time">7 min</span>
+</div>
 </div>
 </article>
 
-<!-- Article 4 -->
 <article class="blog-card">
 <div class="blog-card-image">
 <a href="../../blog/accounting-internal-or-accounting-external/index.html">
 <img src="https://advensys-conseil.lu/wp-content/uploads/2022/04/accounting-e1650531220563.png" alt="Internal or external accounting">
 </a>
-<span class="blog-card-category">Accounting</span>
+<span class="blog-card-category accounting">Accounting</span>
 </div>
 <div class="blog-card-content">
-<span class="blog-card-date">May 2, 2022</span>
-<h3 class="blog-card-title">
-<a href="../../blog/accounting-internal-or-accounting-external/index.html">Internal Accounting or External Accountant!</a>
-</h3>
-<p class="blog-card-excerpt">When a company starts to grow, its financial needs also increase. Discover the advantages of each option.</p>
-<a href="../../blog/accounting-internal-or-accounting-external/index.html" class="blog-card-link">Read More</a>
+<span class="blog-card-date">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+May 2, 2022
+</span>
+<h3 class="blog-card-title"><a href="../../blog/accounting-internal-or-accounting-external/index.html">Internal accounting or external accountant!</a></h3>
+<p class="blog-card-excerpt">When a business starts to grow, its financial needs also increase. Discover the advantages of each option.</p>
+<div class="blog-card-footer">
+<a href="../../blog/accounting-internal-or-accounting-external/index.html" class="blog-card-link">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+<span class="blog-card-read-time">4 min</span>
+</div>
 </div>
 </article>
 
-<!-- Article 5 -->
 <article class="blog-card">
 <div class="blog-card-image">
 <a href="../../blog/steps-for-setting-up-a-company-in-luxembourg/index.html">
-<img src="https://advensys-conseil.lu/wp-content/uploads/2022/04/steps.jpg" alt="Steps to create a company">
+<img src="https://advensys-conseil.lu/wp-content/uploads/2022/04/map-luxembourg-polygonal-mesh-line-map-flag-map-e1649770072146.png" alt="Steps to create a company">
 </a>
 <span class="blog-card-category">Business</span>
 </div>
 <div class="blog-card-content">
-<span class="blog-card-date">April 21, 2022</span>
-<h3 class="blog-card-title">
-<a href="../../blog/steps-for-setting-up-a-company-in-luxembourg/index.html">Steps for Setting Up a Company in Luxembourg</a>
-</h3>
-<p class="blog-card-excerpt">Complete guide to the steps required to set up your company in Luxembourg. From idea to registration.</p>
-<a href="../../blog/steps-for-setting-up-a-company-in-luxembourg/index.html" class="blog-card-link">Read More</a>
+<span class="blog-card-date">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+April 21, 2022
+</span>
+<h3 class="blog-card-title"><a href="../../blog/steps-for-setting-up-a-company-in-luxembourg/index.html">Steps to create a business in Luxembourg</a></h3>
+<p class="blog-card-excerpt">Complete guide to the steps required to create your business in Luxembourg. From idea to official registration.</p>
+<div class="blog-card-footer">
+<a href="../../blog/steps-for-setting-up-a-company-in-luxembourg/index.html" class="blog-card-link">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+<span class="blog-card-read-time">8 min</span>
+</div>
 </div>
 </article>
 
-<!-- Article 6 -->
 <article class="blog-card">
 <div class="blog-card-image">
 <a href="../../blog/advantages-of-setting-up-your-company-in-luxembourg/index.html">
-<img src="https://advensys-conseil.lu/wp-content/uploads/2022/04/advensys.png" alt="Advantages Luxembourg">
+<img src="https://advensys-conseil.lu/wp-content/uploads/2021/02/consulting-co-working-business-team-meeting-planning-strategy-analysis-investment_18497-1099.jpg" alt="Advantages Luxembourg">
 </a>
 <span class="blog-card-category">Business</span>
 </div>
 <div class="blog-card-content">
-<span class="blog-card-date">April 19, 2022</span>
-<h3 class="blog-card-title">
-<a href="../../blog/advantages-of-setting-up-your-company-in-luxembourg/index.html">The Advantages of Setting Up Your Company in Luxembourg</a>
-</h3>
-<p class="blog-card-excerpt">Discover why Luxembourg is a preferred destination for international entrepreneurs and investors.</p>
-<a href="../../blog/advantages-of-setting-up-your-company-in-luxembourg/index.html" class="blog-card-link">Read More</a>
+<span class="blog-card-date">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+April 19, 2022
+</span>
+<h3 class="blog-card-title"><a href="../../blog/advantages-of-setting-up-your-company-in-luxembourg/index.html">The advantages of creating your company in Luxembourg</a></h3>
+<p class="blog-card-excerpt">Discover why Luxembourg is a preferred destination for entrepreneurs and international investors.</p>
+<div class="blog-card-footer">
+<a href="../../blog/advantages-of-setting-up-your-company-in-luxembourg/index.html" class="blog-card-link">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+<span class="blog-card-read-time">5 min</span>
+</div>
 </div>
 </article>
 </div>
 
-<!-- Pagination -->
 <div class="pagination">
 <span class="current">1</span>
 <a href="page/2/index.html">2</a>
 <a href="page/3/index.html">3</a>
 <a href="page/4/index.html">4</a>
-<a href="page/2/index.html" class="next-btn">Next →</a>
+<a href="page/2/index.html" class="next-btn">Next <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
 </div>
 </div>
 </section>
 
-<!-- Newsletter Section -->
 <section class="newsletter-section">
 <div class="container">
 <div class="newsletter-container">
 <div class="newsletter-text">
-<h3>Subscribe to our newsletter</h3>
-<p>Receive our latest articles and tips directly in your inbox.</p>
+<h3>Stay informed</h3>
+<p>Subscribe to our newsletter to receive our latest articles and tips directly in your inbox.</p>
 </div>
 <form class="newsletter-form" method="post" action="https://advensys-conseil.lu/?na=s">
 <input type="email" name="ne" placeholder="Your email address" required>
@@ -650,7 +404,7 @@
 <div class="footer-box-info">
 <div class="footer-info-text">
 <img src="https://advensys-conseil.lu/wp-content/uploads/2020/02/logo.svg" class="logo-footer" alt="logo">
-<p class="text-sm">Advensys Conseil is an accounting firm also providing tax optimization and advisory services.</p>
+<p class="text-sm">Advensys Conseil is an accounting firm also providing tax optimization and consulting services.</p>
 <a href="tel:+35228797626" class="phone">+352 28 79 76 26</a>
 <a href="https://wa.me/352661112260" class="ws">+352 661 11 22 60</a>
 <a href="mailto:contact@advensys-conseil.lu" class="mail">contact@advensys-conseil.lu</a>
@@ -660,26 +414,24 @@
 <li class="menu-item menu-item-has-children"><a href="../../main-page/services/index.html">Services</a>
 <ul class="sub-menu">
 <li class="menu-item"><a href="../../about/index.html">About</a></li>
-<li class="menu-item"><a href="../../main-page/services/for-private-people-luxembourg/index.html">For Individuals</a></li>
+<li class="menu-item"><a href="../../main-page/services/for-private-people-luxembourg/index.html">For individuals</a></li>
 <li class="menu-item"><a href="../../main-page/services/accounting/index.html">Accounting</a></li>
-<li class="menu-item"><a href="../../main-page/services/tax-advice/index.html">Tax Advice</a></li>
+<li class="menu-item"><a href="../../main-page/services/tax-advice/index.html">Tax advice</a></li>
 </ul>
 </li>
 <li class="menu-item"><a href="index.html">Blog</a></li>
 <li class="menu-item"><a href="../../contact/index.html">Contact</a></li>
 </ul>
 <div class="footer-about">
-<p class="about-footer-text">The brand "Advensys Conseil" is registered by<br>Groupe Advensys Luxembourg S.A.<br><br>Trade Register: B 197138<br><br>Authorized by the Ministry<br>of Economy: 10059637/1<br>10059637/0</p>
+<p class="about-footer-text">The "Advensys Conseil" brand is registered by<br>Groupe Advensys Luxembourg S.A.<br><br>Trade register: B 197138<br><br>Authorized by the Ministry<br>of Economy: 10059637/1<br>10059637/0</p>
 </div>
 <img src="https://advensys-conseil.lu/wp-content/themes/konseil/assets/img/icon/arr-top.svg" class="click-top" alt="Scroll top" onclick="window.scrollTo({top:0,behavior:'smooth'});" style="cursor:pointer;">
 </div>
 </div>
 </footer>
 </div>
-
 <script src='../../../wp-content/cache/wpfc-minified/77x30pdw/604md.js'></script>
 <script>
-// Smooth scroll for click-top
 document.querySelector('.click-top')?.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });

@@ -13,7 +13,8 @@
       "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\update-coaching.ps1\")",
       "Bash(del \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\update-coaching.ps1\")",
       "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\add-social.ps1\")",
-      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\fix-linkedin.ps1\")"
+      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\fix-linkedin.ps1\")",
+      "Bash(grep:*)"
     ]
   }
 }
