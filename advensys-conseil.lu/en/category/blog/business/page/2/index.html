@@ -54,6 +54,481 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .team-item7 .team-item-caption{position:relative;top:auto;}
 }</style>
 <script data-wpfc-render="false">var Wpfcll={s:[],osl:0,scroll:false,i:function(){Wpfcll.ss();window.addEventListener('load',function(){window.addEventListener("DOMSubtreeModified",function(e){Wpfcll.osl=Wpfcll.s.length;Wpfcll.ss();if(Wpfcll.s.length > Wpfcll.osl){Wpfcll.ls(false);}},false);Wpfcll.ls(true);});window.addEventListener('scroll',function(){Wpfcll.scroll=true;Wpfcll.ls(false);});window.addEventListener('resize',function(){Wpfcll.scroll=true;Wpfcll.ls(false);});window.addEventListener('click',function(){Wpfcll.scroll=true;Wpfcll.ls(false);});},c:function(e,pageload){var w=document.documentElement.clientHeight || body.clientHeight;var n=0;if(pageload){n=0;}else{n=(w > 800) ? 800:200;n=Wpfcll.scroll ? 800:n;}var er=e.getBoundingClientRect();var t=0;var p=e.parentNode ? e.parentNode:false;if(typeof p.getBoundingClientRect=="undefined"){var pr=false;}else{var pr=p.getBoundingClientRect();}if(er.x==0 && er.y==0){for(var i=0;i < 10;i++){if(p){if(pr.x==0 && pr.y==0){if(p.parentNode){p=p.parentNode;}if(typeof p.getBoundingClientRect=="undefined"){pr=false;}else{pr=p.getBoundingClientRect();}}else{t=pr.top;break;}}};}else{t=er.top;}if(w - t+n > 0){return true;}return false;},r:function(e,pageload){var s=this;var oc,ot;try{oc=e.getAttribute("data-wpfc-original-src");ot=e.getAttribute("data-wpfc-original-srcset");if(s.c(e,pageload)){if(oc || ot){if(e.tagName=="DIV" || e.tagName=="A"){e.style.backgroundImage="url("+oc+")";e.removeAttribute("data-wpfc-original-src");e.removeAttribute("data-wpfc-original-srcset");e.removeAttribute("onload");}else{if(oc){e.setAttribute('src',oc);}if(ot){e.setAttribute('srcset',ot);}if(e.getAttribute("alt") && e.getAttribute("alt")=="blank"){e.removeAttribute("alt");}e.removeAttribute("data-wpfc-original-src");e.removeAttribute("data-wpfc-original-srcset");e.removeAttribute("onload");if(e.tagName=="IFRAME"){e.onload=function(){if(typeof window.jQuery !="undefined"){if(jQuery.fn.fitVids){jQuery(e).parent().fitVids({customSelector:"iframe[src]"});}}var s=e.getAttribute("src").match(/templates\/youtube\.html\#(.+)/);var y="https://www.youtube.com/embed/";if(s){try{var i=e.contentDocument || e.contentWindow;if(i.location.href=="about:blank"){e.setAttribute('src',y+s[1]);}}catch(err){e.setAttribute('src',y+s[1]);}}}}}}else{if(e.tagName=="NOSCRIPT"){if(jQuery(e).attr("data-type")=="wpfc"){e.removeAttribute("data-type");jQuery(e).after(jQuery(e).text());}}}}}catch(error){console.log(error);console.log("==>",e);}},ss:function(){var i=Array.prototype.slice.call(document.getElementsByTagName("img"));var f=Array.prototype.slice.call(document.getElementsByTagName("iframe"));var d=Array.prototype.slice.call(document.getElementsByTagName("div"));var a=Array.prototype.slice.call(document.getElementsByTagName("a"));var n=Array.prototype.slice.call(document.getElementsByTagName("noscript"));this.s=i.concat(f).concat(d).concat(a).concat(n);},ls:function(pageload){var s=this;[].forEach.call(s.s,function(e,index){s.r(e,pageload);});}};document.addEventListener('DOMContentLoaded',function(){wpfci();});function wpfci(){Wpfcll.i();}</script>
+
+<style>
+/* Premium Category Page Styles */
+* { box-sizing: border-box; }
+
+/* Hero Section - Clean Modern Design */
+.blog-screen {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%) !important;
+  padding: 100px 0 60px !important;
+  position: relative;
+  overflow: hidden;
+  min-height: auto !important;
+  height: auto !important;
+  margin-bottom: 0 !important;
+}
+
+.blog-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background: radial-gradient(circle at 80% 20%, rgba(201,162,39,0.15) 0%, transparent 50%),
+              radial-gradient(circle at 60% 80%, rgba(11,99,246,0.1) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.blog-screen .container {
+  position: relative;
+  z-index: 2;
+}
+
+.blog-screen .main-screen-box {
+  text-align: center;
+}
+
+.blog-screen .main-subtitle {
+  color: #c9a227 !important;
+  font-size: 13px !important;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.blog-screen .main-subtitle::before {
+  content: 'Publications';
+}
+
+.blog-screen .main-text {
+  color: #ffffff !important;
+  font-size: 42px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+}
+
+.blog-screen .main-text::before {
+  content: 'Actualités & Expertise';
+}
+
+/* Hide ugly background image */
+.image_bg_archive {
+  display: none !important;
+}
+
+/* Blog Background Container */
+.blog_bg {
+  background: #f8f9fc !important;
+  padding-top: 0 !important;
+}
+
+#primary.content-area {
+  background: #f8f9fc !important;
+}
+
+/* Premium Category Filters */
+.blog_navigation_main {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0,34,110,0.08), 0 1px 3px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  border: 1px solid rgba(0,34,110,0.06);
+}
+
+.blog_navigation_main-span {
+  font-weight: 700;
+  color: #00226E;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  padding-right: 20px;
+  margin-right: 10px;
+}
+
+.blog_navigation_main-span::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 24px;
+  background: linear-gradient(180deg, transparent, #c9a227, transparent);
+}
+
+/* Category Filter Buttons */
+.child_of_type {
+  display: inline-flex;
+}
+
+.child_of_type a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: linear-gradient(145deg, #ffffff 0%, #f5f7fa 100%);
+  color: #00226E;
+  border: 1.5px solid rgba(0,34,110,0.12);
+  box-shadow: 0 2px 8px rgba(0,34,110,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.child_of_type a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  transition: left 0.6s ease;
+}
+
+.child_of_type a:hover {
+  background: linear-gradient(135deg, #0B63F6 0%, #003CC5 100%);
+  color: #ffffff;
+  border-color: transparent;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(11,99,246,0.35), 0 4px 10px rgba(0,60,197,0.2);
+}
+
+.child_of_type a:hover::before {
+  left: 100%;
+}
+
+.child_of_type a:hover img {
+  filter: brightness(0) invert(1);
+}
+
+/* Active category state */
+.child_of_type.active a,
+.current-cat a {
+  background: linear-gradient(135deg, #c9a227 0%, #dbb42e 50%, #e8c33a 100%) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+  font-weight: 700;
+  box-shadow: 0 6px 20px rgba(201,162,39,0.4), 0 3px 8px rgba(201,162,39,0.25);
+}
+
+.child_of_type.active a img,
+.current-cat a img {
+  filter: brightness(0) invert(1);
+}
+
+.child_of_type a img {
+  width: 18px;
+  height: 18px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.child_of_type a span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hide Coaching category */
+.child_of_type a[href*="coaching"] {
+  display: none !important;
+}
+
+/* Blog Cards Container */
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
+  .blog_navigation_main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .blog_navigation_main-span {
+    padding-right: 0;
+    margin-bottom: 5px;
+  }
+  .blog_navigation_main-span::after {
+    display: none;
+  }
+}
+
+/* Blog Card Styles */
+.blog-box {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+}
+
+.blog-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.blog-box .post-thumbnail img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.blog-box:hover .post-thumbnail img {
+  transform: scale(1.05);
+}
+
+.blog-box .entry-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #00226E;
+  line-height: 1.4;
+  margin: 15px 0 10px;
+  padding: 0 20px;
+}
+
+.blog-box .entry-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-box .entry-title a:hover {
+  color: #0B63F6;
+}
+
+.blog-box .content_small {
+  padding: 0 20px;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.blog-box .wrap-btn {
+  padding: 15px 20px 25px;
+}
+
+.blog-box .btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #c9a227;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.blog-box .btn-gold:hover {
+  color: #0B63F6;
+  gap: 12px;
+}
+
+.blog-box .btn-gold::after {
+  content: '→';
+}
+
+/* Type Container Badge */
+.preview_container {
+  padding: 15px 20px 0;
+}
+
+.type_container {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #0B63F6 0%, #003CC5 100%);
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.type_container img {
+  width: 14px;
+  height: 14px;
+  filter: brightness(0) invert(1);
+}
+
+.type_container span {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Empty State */
+.no-results {
+  text-align: center;
+  padding: 80px 40px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.no-results .page-title {
+  font-size: 24px;
+  color: #00226E;
+  margin-bottom: 15px;
+}
+
+.no-results p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Pagination */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 40px 0;
+}
+
+.nav-links a, .nav-links span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 45px;
+  height: 45px;
+  padding: 0 15px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-links a {
+  background: #fff;
+  color: #00226E;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-links a:hover {
+  background: linear-gradient(135deg, #0B63F6 0%, #003CC5 100%);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.nav-links .current {
+  background: linear-gradient(135deg, #c9a227 0%, #e8b923 100%);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(201,162,39,0.3);
+}
+
+/* Newsletter Section - Premium Design */
+.newsletter-sidebar,
+.widget_developer_developer_newsletter_widget,
+[class*="newsletter"] {
+  background: linear-gradient(135deg, #0B63F6 0%, #003CC5 100%) !important;
+  padding: 40px !important;
+  border-radius: 16px !important;
+  margin: 40px 0 !important;
+  text-align: center;
+}
+
+.newsletter-sidebar h3,
+.widget_developer_developer_newsletter_widget h3,
+[class*="newsletter"] h3 {
+  color: #fff !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  margin-bottom: 10px !important;
+}
+
+.newsletter-sidebar p,
+[class*="newsletter"] p {
+  color: rgba(255,255,255,0.85) !important;
+  font-size: 16px !important;
+  margin-bottom: 20px !important;
+}
+
+.newsletter-sidebar input[type="email"],
+[class*="newsletter"] input[type="email"] {
+  width: 100%;
+  max-width: 350px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.newsletter-sidebar button,
+.newsletter-sidebar input[type="submit"],
+[class*="newsletter"] button,
+[class*="newsletter"] input[type="submit"] {
+  background: linear-gradient(135deg, #c9a227 0%, #e8b923 100%) !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 15px 35px !important;
+  border-radius: 50px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+.newsletter-sidebar button:hover,
+[class*="newsletter"] button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 25px rgba(201,162,39,0.4) !important;
+}
+
+/* Hide broken elements */
+.,
+[class*=""],
+img[alt=""] {
+  display: none !important;
+}
+
+/* Footer spacing */
+footer {
+  margin-top: 60px;
+}
+
+/* Hide duplicate blog links in menu */
+#menu-item-1524,
+#menu-item-2052 {
+  display: none !important;
+}
+
+/* Single blog display fix */
+.single-blog-box {
+  display: none !important;
+}
+
+.single-blog-none {
+  display: block !important;
+}
+</style>
+
 </head>
 <body>
 <div class="wrapper">
@@ -91,7 +566,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <span class="blog_navigation_main-span">
 Publications
 </span>
-<div class="child_of_type"> <a href="../../../index.html"> <img onload="Wpfcll.r(this,true);" src="../../../../../../wp-content/plugins/wp-fastest-cache-premium/pro/images/blank.gif" data-wpfc-original-src="../../../../../../wp-content/themes/konseil/assets/img/blog/all.png" alt="all"> <span>All</span> </a></div><div class="child_of_type"> <a href="../../index.html"> <img onload="Wpfcll.r(this,true);" src="../../../../../../wp-content/plugins/wp-fastest-cache-premium/pro/images/blank.gif" data-wpfc-original-src="../../../../../../wp-content/themes/konseil/assets/img/blog/business.png" alt="business"> <span>Business</span> </a></div><div class="child_of_type"> <a href="../../../coaching/index.html"> <img onload="Wpfcll.r(this,true);" src="../../../../../../wp-content/plugins/wp-fastest-cache-premium/pro/images/blank.gif" data-wpfc-original-src="../../../../../../wp-content/themes/konseil/assets/img/blog/coaching.png" alt="coaching"> <span>Coaching</span> </a></div><div class="child_of_type"> <a href="../../../accounting/index.html"> <img onload="Wpfcll.r(this,true);" src="../../../../../../wp-content/plugins/wp-fastest-cache-premium/pro/images/blank.gif" data-wpfc-original-src="../../../../../../wp-content/themes/konseil/assets/img/blog/calculator.png" alt="calculator"> <span>Accounting</span> </a></div><div class="child_of_type"> <a href="../../../taxes/index.html"> <img onload="Wpfcll.r(this,true);" src="../../../../../../wp-content/plugins/wp-fastest-cache-premium/pro/images/blank.gif" data-wpfc-original-src="../../../../../../wp-content/themes/konseil/assets/img/blog/taxes.png" alt="taxes"> <span>Taxes</span> </a></div><div class="child_of_type"> <a href="../../../fund/index.html"> <img onload="Wpfcll.r(this,true);" src="../../../../../../wp-content/plugins/wp-fastest-cache-premium/pro/images/blank.gif" data-wpfc-original-src="../../../../../../wp-content/themes/konseil/assets/img/blog/taxes.png" alt="taxes"> <span>Fund</span> </a></div></div><div class="blog-container">
+<div class="child_of_type"> <a href="../../../index.html"> <img onload="Wpfcll.r(this,true);" src="../../../../../../wp-content/plugins/wp-fastest-cache-premium/pro/images/blank.gif" data-wpfc-original-src="../../../../../../wp-content/themes/konseil/assets/img/blog/all.png" alt="all"> <span>All</span> </a></div><div class="child_of_type"> <a href="../../index.html"> <img onload="Wpfcll.r(this,true);" src="../../../../../../wp-content/plugins/wp-fastest-cache-premium/pro/images/blank.gif" data-wpfc-original-src="../../../../../../wp-content/themes/konseil/assets/img/blog/business.png" alt="business"> <span>Business</span> </a></div><div class="child_of_type"> <a href="../../../accounting/index.html"> <img onload="Wpfcll.r(this,true);" src="../../../../../../wp-content/plugins/wp-fastest-cache-premium/pro/images/blank.gif" data-wpfc-original-src="../../../../../../wp-content/themes/konseil/assets/img/blog/calculator.png" alt="calculator"> <span>Accounting</span> </a></div><div class="child_of_type"> <a href="../../../taxes/index.html"> <img onload="Wpfcll.r(this,true);" src="../../../../../../wp-content/plugins/wp-fastest-cache-premium/pro/images/blank.gif" data-wpfc-original-src="../../../../../../wp-content/themes/konseil/assets/img/blog/taxes.png" alt="taxes"> <span>Taxes</span> </a></div><div class="child_of_type"> <a href="../../../fund/index.html"> <img onload="Wpfcll.r(this,true);" src="../../../../../../wp-content/plugins/wp-fastest-cache-premium/pro/images/blank.gif" data-wpfc-original-src="../../../../../../wp-content/themes/konseil/assets/img/blog/taxes.png" alt="taxes"> <span>Fund</span> </a></div></div><div class="blog-container">
 <article id="post-1787" class="post-1787 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-business">
 <div class="blog-box single-blog-none">
 <a class="post-thumbnail" href="../../../../../blog/successful-new-product/index.html" aria-hidden="true" tabindex="-1">
@@ -553,7 +1028,7 @@ Publications
 <div class="nav-links"><div class="nav-previous"><a href="../3/index.html">Older posts</a></div><div class="nav-next"><a href="../../index.html">Newer posts</a></div></div></nav>
 <div style="padding: 20px;">
 <div class="subscribe_container">
-<div class="name_of_block"> <span>SUBSCRIBE TO OUR BLOG</span> <img onload="Wpfcll.r(this,true);" src="../../../../../../wp-content/plugins/wp-fastest-cache-premium/pro/images/blank.gif" data-wpfc-original-src="../../../../../../wp-content/themes/konseil/assets/img/blog/subcribe.png" alt="subcribe" style="object-fit: contain;"></div><img onload="Wpfcll.r(this,true);" src="../../../../../../wp-content/plugins/wp-fastest-cache-premium/pro/images/blank.gif" data-wpfc-original-src="../../../../../../wp-content/themes/konseil/assets/img/blog/yelline.png" alt="yelline" class="yelline">
+<div class="name_of_block"> <span>SUBSCRIBE TO OUR BLOG</span> <img onload="Wpfcll.r(this,true);" src="../../../../../../wp-content/plugins/wp-fastest-cache-premium/pro/images/blank.gif" data-wpfc-original-src="../../../../../../wp-content/themes/konseil/assets/img/blog/S'abonner.png" alt="S'abonner" style="object-fit: contain;"></div><img onload="Wpfcll.r(this,true);" src="../../../../../../wp-content/plugins/wp-fastest-cache-premium/pro/images/blank.gif" data-wpfc-original-src="../../../../../../wp-content/themes/konseil/assets/img/blog/.png" alt="" class="">
 <div class="form_submit">
 <div class="tnp tnp-subscription">
 <form method="post" action="https://advensys-conseil.lu/?na=s" onsubmit="return newsletter_check(this)">
@@ -594,7 +1069,7 @@ Publications
 .subscribe_container .form_submit .tnp-submit{background:linear-gradient(164.74deg, #FFC200 0%, #FF785E 100%);border-radius:2px;display:flex;font:600 14px/17px 'Barlow', sans-serif;letter-spacing:1px;color:#FFF;border:none;padding-top:5px;padding-bottom:5px;text-align:center;display:flex;justify-content:center;width:110px;margin:0 auto;margin-top:20px;margin-bottom:5px;}
 .subscribe_container .form_submit input{color:#fff;font:500 18px 'Barlow', sans-serif;background:transparent;border:none;border-bottom:1px solid #fff;padding-bottom:10px;width:93%;}
 .subscribe_container .form_submit input::placeholder{color:#fff;font:500 18px 'Barlow', sans-serif;}
-.yelline{margin-bottom:20px;}
+.{margin-bottom:20px;}
 .blog_navigation_main{display:flex;align-items:center;margin-bottom:25px;}
 .blog_navigation_main .child_of_type{display:flex;background:linear-gradient(167.01deg, #0B63F6 0%, #003CC5 100%);border-radius:2px;padding:5px;padding-left:10px;padding-right:10px;margin-left:10px;margin-right:10px;min-width:130px;}
 .blog_navigation_main .child_of_type a{display:flex;align-items:center;width:100%;}
