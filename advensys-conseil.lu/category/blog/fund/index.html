@@ -36,12 +36,28 @@
 .section-header { text-align: center; margin-bottom: 50px; }
 .section-header h2 { font-size: 40px; font-weight: 700; color: #00226E; margin-bottom: 15px; }
 .section-header p { color: #666; font-size: 18px; }
-.empty-state { text-align: center; padding: 80px 20px; background: #fff; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); }
-.empty-state svg { width: 80px; height: 80px; color: #f39c12; margin-bottom: 20px; }
-.empty-state h3 { font-size: 24px; color: #00226E; margin-bottom: 10px; }
-.empty-state p { color: #666; font-size: 16px; margin-bottom: 20px; }
-.empty-state a { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; background: linear-gradient(135deg, #c9a227 0%, #e8b923 100%); color: #fff; text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s; }
-.empty-state a:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(201,162,39,0.4); }
+.blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 35px; }
+@media (max-width: 1024px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 680px) { .blog-grid { grid-template-columns: 1fr; } }
+.blog-card { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.08); transition: all 0.4s; display: flex; flex-direction: column; border: 1px solid rgba(0,0,0,0.05); }
+.blog-card:hover { transform: translateY(-12px); box-shadow: 0 25px 60px rgba(0,0,0,0.15); }
+.blog-card-image { position: relative; height: 220px; overflow: hidden; }
+.blog-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s; }
+.blog-card:hover .blog-card-image img { transform: scale(1.08); }
+.blog-card-category { position: absolute; top: 15px; left: 15px; background: linear-gradient(135deg, #f39c12 0%, #d68910 100%); color: #fff; padding: 8px 16px; border-radius: 25px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+.blog-card-content { padding: 28px; flex: 1; display: flex; flex-direction: column; }
+.blog-card-date { display: flex; align-items: center; gap: 8px; color: #f39c12; font-size: 13px; font-weight: 600; margin-bottom: 12px; }
+.blog-card-date svg { width: 14px; height: 14px; }
+.blog-card-title { font-size: 20px; font-weight: 700; color: #00226E; margin-bottom: 15px; line-height: 1.4; }
+.blog-card-title a { color: inherit; text-decoration: none; transition: color 0.3s; }
+.blog-card-title a:hover { color: #f39c12; }
+.blog-card-excerpt { color: #666; font-size: 15px; line-height: 1.7; margin-bottom: 20px; flex: 1; }
+.blog-card-footer { display: flex; justify-content: space-between; align-items: center; padding-top: 20px; border-top: 1px solid #f0f0f0; }
+.blog-card-link { display: inline-flex; align-items: center; gap: 8px; color: #c9a227; font-weight: 700; font-size: 14px; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s; }
+.blog-card-link svg { width: 18px; height: 18px; transition: transform 0.3s; }
+.blog-card-link:hover { color: #f39c12; }
+.blog-card-link:hover svg { transform: translateX(5px); }
+.blog-card-read-time { color: #999; font-size: 13px; }
 .newsletter-section { background: linear-gradient(135deg, #f39c12 0%, #d68910 100%); padding: 80px 0; }
 .newsletter-container { display: flex; align-items: center; justify-content: space-between; gap: 50px; flex-wrap: wrap; }
 .newsletter-text h3 { color: #fff; font-size: 32px; font-weight: 700; margin-bottom: 12px; }
@@ -126,18 +142,60 @@
 <p>Conseils sur les fonds d'investissement</p>
 </div>
 
-<div class="empty-state">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-<circle cx="12" cy="12" r="10"/>
-<line x1="12" y1="8" x2="12" y2="12"/>
-<line x1="12" y1="16" x2="12.01" y2="16"/>
-</svg>
-<h3>Contenu a venir</h3>
-<p>Nous preparons des articles sur les fonds d'investissement. Revenez bientot!</p>
-<a href="../index.html">
-<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
-Voir tous les articles
+<div class="blog-grid">
+<article class="blog-card">
+<div class="blog-card-image">
+<a href="../../../blog/why-luxembourg-is-your-payment-hub-in-the-eu/index.html">
+<img src="../../../wp-content/uploads/2020/03/whatsapp-image-2020-01-22-at-12.02.07-e1583747745519.jpg" alt="Fonds d'investissement Luxembourg">
 </a>
+<span class="blog-card-category">Fonds</span>
+</div>
+<div class="blog-card-content">
+<span class="blog-card-date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>15 Janvier 2024</span>
+<h3 class="blog-card-title"><a href="../../../blog/why-luxembourg-is-your-payment-hub-in-the-eu/index.html">Pourquoi le Luxembourg est le hub des fonds en Europe</a></h3>
+<p class="blog-card-excerpt">Decouvrez pourquoi le Luxembourg est devenu le premier centre europeen pour les fonds d'investissement.</p>
+<div class="blog-card-footer">
+<a href="../../../blog/why-luxembourg-is-your-payment-hub-in-the-eu/index.html" class="blog-card-link">Lire la suite <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+<span class="blog-card-read-time">8 min</span>
+</div>
+</div>
+</article>
+
+<article class="blog-card">
+<div class="blog-card-image">
+<a href="../../../blog/advantages-of-setting-up-your-company-in-luxembourg/index.html">
+<img src="../../../wp-content/uploads/2022/09/handshake-business-men-concept-e1663338389220.jpg" alt="Avantages fonds Luxembourg">
+</a>
+<span class="blog-card-category">Fonds</span>
+</div>
+<div class="blog-card-content">
+<span class="blog-card-date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>10 Decembre 2023</span>
+<h3 class="blog-card-title"><a href="../../../blog/advantages-of-setting-up-your-company-in-luxembourg/index.html">Les avantages fiscaux des fonds au Luxembourg</a></h3>
+<p class="blog-card-excerpt">Le cadre reglementaire luxembourgeois offre des avantages fiscaux attractifs pour les gestionnaires de fonds.</p>
+<div class="blog-card-footer">
+<a href="../../../blog/advantages-of-setting-up-your-company-in-luxembourg/index.html" class="blog-card-link">Lire la suite <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+<span class="blog-card-read-time">6 min</span>
+</div>
+</div>
+</article>
+
+<article class="blog-card">
+<div class="blog-card-image">
+<a href="../../../blog/steps-for-setting-up-a-company-in-luxembourg/index.html">
+<img src="../../../wp-content/uploads/2020/03/steps-company-setup.jpg" alt="Creation de fonds">
+</a>
+<span class="blog-card-category">Fonds</span>
+</div>
+<div class="blog-card-content">
+<span class="blog-card-date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>5 Novembre 2023</span>
+<h3 class="blog-card-title"><a href="../../../blog/steps-for-setting-up-a-company-in-luxembourg/index.html">Guide: Creer un fonds d'investissement au Luxembourg</a></h3>
+<p class="blog-card-excerpt">Les etapes cles pour etablir votre fonds d'investissement au Grand-Duche de Luxembourg.</p>
+<div class="blog-card-footer">
+<a href="../../../blog/steps-for-setting-up-a-company-in-luxembourg/index.html" class="blog-card-link">Lire la suite <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+<span class="blog-card-read-time">10 min</span>
+</div>
+</div>
+</article>
 </div>
 </div>
 </section>
