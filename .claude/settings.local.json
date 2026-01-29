@@ -19,7 +19,9 @@
       "Bash(echo:*)",
       "Bash(curl:*)",
       "Bash(UA=\"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.0.0 Safari/537.36\")",
-      "Bash(do curl -sS -A \"$UA\" -o \"$img\" \"https://advensys-conseil.lu/wp-content/themes/konseil/assets/img/blog/$img\")"
+      "Bash(do curl -sS -A \"$UA\" -o \"$img\" \"https://advensys-conseil.lu/wp-content/themes/konseil/assets/img/blog/$img\")",
+      "Bash(__NEW_LINE_d45b54f88ba0c35c__ curl -sS -L -A \"$UA\" -o \"C:/Users/Toufi/AndroidStudioProjects/cloningk/advensys-conseil.lu/wp-content/themes/konseil/assets/img/media/bfmtv-logo.png\" \"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Logo_BFMTV_2019.svg/200px-Logo_BFMTV_2019.svg.png\")",
+      "Bash(__NEW_LINE_d45b54f88ba0c35c__ curl -sS -L -A \"$UA\" -o \"C:/Users/Toufi/AndroidStudioProjects/cloningk/advensys-conseil.lu/wp-content/themes/konseil/assets/img/media/forbes-logo.png\" \"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Forbes_logo.svg/200px-Forbes_logo.svg.png\")"
     ]
   }
 }
