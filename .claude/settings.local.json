@@ -14,7 +14,12 @@
       "Bash(del \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\update-coaching.ps1\")",
       "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\add-social.ps1\")",
       "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\fix-linkedin.ps1\")",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(do curl -sS -o \"$img\" \"https://advensys-conseil.lu/wp-content/themes/konseil/assets/img/blog/$img\")",
+      "Bash(echo:*)",
+      "Bash(curl:*)",
+      "Bash(UA=\"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.0.0 Safari/537.36\")",
+      "Bash(do curl -sS -A \"$UA\" -o \"$img\" \"https://advensys-conseil.lu/wp-content/themes/konseil/assets/img/blog/$img\")"
     ]
   }
 }
