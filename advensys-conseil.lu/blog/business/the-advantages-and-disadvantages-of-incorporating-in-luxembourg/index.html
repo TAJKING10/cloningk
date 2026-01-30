@@ -202,7 +202,7 @@ Partager
 <p class="comment-form-email"><label for="email">Adresse de messagerie <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
 <p class="comment-form-url"><label for="url">Site web</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
 <p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Enregistrer mon nom, mon e-mail et mon site web dans le navigateur pour mon prochain commentaire.</label></p>
-<div class="anr_captcha_field"><div id="anr_captcha_field_1" class="anr_captcha_field_div"></div></div><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Laisser un commentaire" /> <input type='hidden' name='comment_post_ID' value='2026' id='comment_post_ID' />
+<div class="anr_captcha_field" style="margin:15px 0;display:flex;justify-content:center;"><label style="display:flex !important;align-items:center;gap:12px;padding:14px 24px;border:2px solid #ccc;border-radius:6px;cursor:pointer;background:#f9f9f9;font:500 15px Barlow,sans-serif;color:#00226E;user-select:none;transition:border-color 0.2s;"><input type="checkbox" id="not-a-robot" required style="width:22px !important;height:22px !important;min-width:22px;cursor:pointer;accent-color:#003CC5;appearance:checkbox !important;-webkit-appearance:checkbox !important;display:inline-block !important;border:2px solid #003CC5 !important;border-radius:3px;padding:0 !important;margin:0;">Je ne suis pas un robot</label></div><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Laisser un commentaire" /> <input type='hidden' name='comment_post_ID' value='2026' id='comment_post_ID' />
 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
 </p></form></div></div><style>.head-share-container{display:flex;justify-content:space-between;}
 .head-share-container1{display:flex;}
@@ -260,6 +260,9 @@ text-align:center;color:#00226E;}
 }
 #respond form .anr_captcha_field{margin-top:10px;margin-bottom:10px;display:flex;justify-content:center;}
 #respond form label{display:none;}
+#respond form .anr_captcha_field label{display:flex !important;align-items:center;gap:12px;padding:14px 24px;border:2px solid #ccc;border-radius:6px;cursor:pointer;background:#f9f9f9;font:500 15px 'Barlow',sans-serif;color:#00226E;user-select:none;}
+#respond form .anr_captcha_field label:hover{border-color:#003CC5;}
+#respond form .anr_captcha_field input[type="checkbox"]{width:22px !important;height:22px !important;min-width:22px;min-height:22px;cursor:pointer;accent-color:#003CC5;-webkit-appearance:checkbox !important;appearance:checkbox !important;display:inline-block !important;border:2px solid #003CC5 !important;border-bottom:2px solid #003CC5 !important;border-radius:3px;padding:0 !important;margin:0;background:#fff;}
 #respond form #submit{background:linear-gradient(166.21deg, #FFC200 0%, #FF785E 100%);border-radius:2px;font:600 18px 'Barlow', sans-serif;font-style:normal;font-size:18px;line-height:22px;display:flex;align-items:center;text-align:center;letter-spacing:1px;padding:15px;
 width:auto;margin:0 auto;color:#FFFFFF;}
 #respond form .comment-notes{display:none;}
@@ -343,32 +346,8 @@ html[lang="ru-RU"]  #respond #reply-title:before{font:600 22px/100% 'Barlow', sa
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script id='wpglobus-js-extra'>var WPGlobus={"version":"2.5.23","language":"fr","enabledLanguages":["fr","en"]};</script>
 <script src='../../../wp-content/cache/wpfc-minified/32qbenfp/60492.js'></script>
-<script>var anr_onloadCallback=function(){
-for(var i=0; i < document.forms.length; i++){
-var form=document.forms[i];
-var captcha_div=form.querySelector('.anr_captcha_field_div');
-if(null===captcha_div)
-continue;
-captcha_div.innerHTML='';
-(function(form){
-var anr_captcha=grecaptcha.render(captcha_div,{
-'sitekey':'6LcG390UAAAAABVyZ7q4OnEIT4CuaXH1NLRpcCzd',
-'size':'normal',
-'theme':'light'
-});
-if(typeof jQuery!=='undefined'){
-jQuery(document.body).on('checkout_error', function(){
-grecaptcha.reset(anr_captcha);
-});
-}
-if(typeof wpcf7!=='undefined'){
-document.addEventListener('wpcf7submit', function(){
-grecaptcha.reset(anr_captcha);
-}, false);
-}})(form);
-}};</script>
-<script src="../../../../www.google.com/recaptcha/api97a4.js?onload=anr_onloadCallback&amp;render=explicit" async defer>
-</script>
+
+
 </body>
 
 <!-- Mirrored from advensys-conseil.lu/blog/business/the-advantages-and-disadvantages-of-incorporating-in-luxembourg/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Jan 2026 12:12:20 GMT -->
