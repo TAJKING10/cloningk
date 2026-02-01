@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -189,7 +189,15 @@ Share
 <p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
 <p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
 <p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
-<div class="anr_captcha_field" style="margin:15px 0;display:flex;justify-content:center;"><label style="display:flex !important;align-items:center;gap:12px;padding:14px 24px;border:2px solid #ccc;border-radius:6px;cursor:pointer;background:#f9f9f9;font:500 15px Barlow,sans-serif;color:#00226E;user-select:none;transition:border-color 0.2s;"><input type="checkbox" id="not-a-robot" required style="width:22px !important;height:22px !important;min-width:22px;cursor:pointer;accent-color:#003CC5;appearance:checkbox !important;-webkit-appearance:checkbox !important;display:inline-block !important;border:2px solid #003CC5 !important;border-radius:3px;padding:0 !important;margin:0;">I am not a robot</label></div><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='2026' id='comment_post_ID' />
+<div class="anr_captcha_field" style="margin:15px 0;display:flex;flex-direction:column;align-items:center;">
+<div id="blog-robot-box" style="display:flex;align-items:center;gap:14px;padding:16px 20px;border:1px solid #e0e0e0;border-radius:12px;background:#f8f9fa;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,0.06);max-width:400px;width:100%;" onclick="toggleBlogRobot();">
+<div id="blog-robot-sq" style="width:28px;height:28px;min-width:28px;border:2.5px solid #4a6fa5;border-radius:6px;background:#fff;display:flex;align-items:center;justify-content:center;transition:background 0.2s,border-color 0.2s;">
+<svg id="blog-robot-tk" width="16" height="12" viewBox="0 0 16 12" style="display:none;"><path d="M2 6L6 10L14 2" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</div>
+<span style="font-size:15px;color:#1a1a2e;user-select:none;">I'm not a robot</span>
+</div>
+<div id="blog-robot-err" style="display:none;color:#B94A48;font-size:13px;margin-top:6px;"></div>
+</div><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='2026' id='comment_post_ID' />
 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
 </p></form></div></div><style>.head-share-container{display:flex;justify-content:space-between;}
 .head-share-container1{display:flex;}
@@ -335,6 +343,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src='../../../../wp-content/cache/wpfc-minified/32qbenfp/60492.js'></script>
 
 
+<script>
+var blogRobotChecked=false;
+function toggleBlogRobot(){
+  blogRobotChecked=!blogRobotChecked;
+  var sq=document.getElementById('blog-robot-sq');
+  var tk=document.getElementById('blog-robot-tk');
+  var btn=document.getElementById('submit');
+  var err=document.getElementById('blog-robot-err');
+  var box=document.getElementById('blog-robot-box');
+  if(blogRobotChecked){
+    sq.style.background='#4a6fa5';sq.style.borderColor='#4a6fa5';
+    tk.style.display='block';
+    if(btn)btn.disabled=false;
+    if(err){err.style.display='none';}
+    if(box){box.style.borderColor='#e0e0e0';}
+  }else{
+    sq.style.background='#fff';sq.style.borderColor='#4a6fa5';
+    tk.style.display='none';
+    if(btn)btn.disabled=true;
+    if(err){err.style.display='none';}
+  }
+}
+(function(){
+  var btn=document.getElementById('submit');
+  if(btn)btn.disabled=true;
+  var form=document.getElementById('commentform');
+  if(form){form.addEventListener('submit',function(e){
+    if(!blogRobotChecked){
+      e.preventDefault();e.stopImmediatePropagation();
+      var err=document.getElementById('blog-robot-err');
+      var box=document.getElementById('blog-robot-box');
+      if(err){err.textContent='Please confirm that you are not a robot.';err.style.display='block';}
+      if(box){box.style.borderColor='#B94A48';}
+      return false;
+    }
+  },true);}
+})();
+</script>
 </body>
 
 </html><!-- WP Fastest Cache file was created in 0.38705515861511 seconds, on 05-11-25 13:01:50 -->

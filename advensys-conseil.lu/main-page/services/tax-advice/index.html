@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr-FR">
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -145,7 +145,15 @@ Contactez-nous                        </p>
 <span class="frm_required" aria-hidden="true">*</span>
 </label>
 <textarea name="item_meta[5]" id="field_9jv0r1" rows="5"  data-reqmsg="Message cannot be blank." aria-required="true" data-invmsg="Message est non valide" aria-invalid="false"  ></textarea></div><input type="hidden" name="item_key" value="" />
-<div class="frm__66030e65558be"> <label for="frm_email_1" > Si vous êtes un humain, ne remplissez pas ce champ. </label> <input id="frm_email_1" type="text" class="frm_verify" name="frm__66030e65558be" value="" autocomplete="false" /></div><div class="frm_submit frm_flex"> <button class="frm_button_submit" type="submit" >Envoyer</button></div></div></fieldset></div></form></div></div></div><a href="#thank" class="popup-with-form call-thank"></a>
+<div class="frm__66030e65558be"> <label for="frm_email_1" > Si vous êtes un humain, ne remplissez pas ce champ. </label> <input id="frm_email_1" type="text" class="frm_verify" name="frm__66030e65558be" value="" autocomplete="false" /></div><div class="frm_form_field" style="margin:15px 0;">
+<div class="robot-box-frm" style="display:flex;align-items:center;gap:14px;padding:16px 20px;border:1px solid #e0e0e0;border-radius:12px;background:#f8f9fa;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,0.06);max-width:400px;" onclick="toggleRobotFrm(this);">
+<div style="width:28px;height:28px;min-width:28px;border:2.5px solid #4a6fa5;border-radius:6px;background:#fff;display:flex;align-items:center;justify-content:center;transition:background 0.2s,border-color 0.2s;" class="robot-sq">
+<svg width="16" height="12" viewBox="0 0 16 12" style="display:none;" class="robot-tk"><path d="M2 6L6 10L14 2" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</div>
+<span style="font-size:15px;color:#1a1a2e;user-select:none;">Je ne suis pas un robot</span>
+</div>
+<div class="robot-err" style="display:none;color:#B94A48;font-size:13px;margin-top:6px;"></div>
+</div><div class="frm_submit frm_flex"> <button class="frm_button_submit" type="submit" >Envoyer</button></div></div></fieldset></div></form></div></div></div><a href="#thank" class="popup-with-form call-thank"></a>
 <div id="thank" class="mfp-hide white-popup-block"> <p class="modal-title"> Merci, nous avons bien reçu <br> votre demande. </p></div></main>
 <footer class="padding">
 <div class="container">
@@ -168,6 +176,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src='../../../wp-content/cache/wpfc-minified/32qbenfp/60492.js'></script>
 <script id='formidable-js-extra'>var frm_js={"ajax_url":"https:\/\/advensys-conseil.lu\/wp-admin\/admin-ajax.php","images_url":"https:\/\/advensys-conseil.lu\/wp-content\/plugins\/formidable\/images","loading":"Chargement\u2026","remove":"Supprimer","offset":"4","nonce":"02784f03af","id":"ID","no_results":"Aucun r\u00e9sultat","file_spam":"Ce fichier semble ind\u00e9sirable.","calc_error":"Il y a une erreur dans le calcul dans le champ avec cl\u00e9","empty_fields":"Veuillez remplir les champs obligatoires pr\u00e9c\u00e9dents avant de mettre un fichier en ligne.","focus_first_error":"1","include_alert_role":"1"};</script>
 <script src='../../../wp-content/cache/wpfc-minified/11q21opo/60a58.js'></script>
+<script>
+function toggleRobotFrm(box){var sq=box.querySelector('.robot-sq');var tk=box.querySelector('.robot-tk');var checked=box.getAttribute('data-checked')==='1';if(!checked){sq.style.background='#4a6fa5';sq.style.borderColor='#4a6fa5';tk.style.display='block';box.setAttribute('data-checked','1');var err=box.parentNode.querySelector('.robot-err');if(err){err.style.display='none';}box.style.borderColor='#e0e0e0';}else{sq.style.background='#fff';sq.style.borderColor='#4a6fa5';tk.style.display='none';box.setAttribute('data-checked','0');}}
+document.addEventListener('DOMContentLoaded',function(){var forms=document.querySelectorAll('form');forms.forEach(function(form){var boxes=form.querySelectorAll('.robot-box-frm');if(boxes.length===0)return;form.addEventListener('submit',function(e){var allChecked=true;boxes.forEach(function(box){if(box.getAttribute('data-checked')!=='1'){allChecked=false;var err=box.parentNode.querySelector('.robot-err');if(err){err.textContent=document.documentElement.lang==='en'?'Please confirm that you are not a robot.':'Veuillez confirmer que vous n\u0027\u00eates pas un robot.';err.style.display='block';}box.style.borderColor='#B94A48';}});if(!allChecked){e.preventDefault();e.stopImmediatePropagation();return false;}},true);});});
+</script>
 </body>
 
 </html><!-- WP Fastest Cache file was created in 0.2162561416626 seconds, on 05-11-25 11:10:34 -->

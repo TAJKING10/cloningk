@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -235,7 +235,15 @@ Share
 <p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
 <p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
 <p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
-<div class="anr_captcha_field" id="robot-check-container"><div class="robot-check-box" id="robot-check-box"><div class="robot-check-checkbox-wrap"><input type="checkbox" id="not-a-robot" aria-label="I am not a robot"></div><span class="robot-check-text">I am not a robot</span></div><p class="robot-check-error" id="robot-error" role="alert" aria-live="polite"></p></div><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" disabled /> <input type='hidden' name='comment_post_ID' value='1787' id='comment_post_ID' />
+<div class="anr_captcha_field" style="margin:15px 0;display:flex;flex-direction:column;align-items:center;">
+<div id="blog-robot-box" style="display:flex;align-items:center;gap:14px;padding:16px 20px;border:1px solid #e0e0e0;border-radius:12px;background:#f8f9fa;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,0.06);max-width:400px;width:100%;" onclick="toggleBlogRobot();">
+<div id="blog-robot-sq" style="width:28px;height:28px;min-width:28px;border:2.5px solid #4a6fa5;border-radius:6px;background:#fff;display:flex;align-items:center;justify-content:center;transition:background 0.2s,border-color 0.2s;">
+<svg id="blog-robot-tk" width="16" height="12" viewBox="0 0 16 12" style="display:none;"><path d="M2 6L6 10L14 2" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</div>
+<span style="font-size:15px;color:#1a1a2e;user-select:none;">I'm not a robot</span>
+</div>
+<div id="blog-robot-err" style="display:none;color:#B94A48;font-size:13px;margin-top:6px;"></div>
+</div><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" disabled /> <input type='hidden' name='comment_post_ID' value='1787' id='comment_post_ID' />
 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
 </p></form></div></div><style>.head-share-container{display:flex;justify-content:space-between;}
 .head-share-container1{display:flex;}
@@ -293,13 +301,7 @@ text-align:center;color:#00226E;}
 }
 #respond form .anr_captcha_field{margin-top:10px;margin-bottom:10px;display:flex;justify-content:center;}
 #respond form label{display:none;}
-.robot-check-box{display:flex !important;align-items:center;gap:14px;padding:16px 28px;border:2px solid #ddd;border-radius:8px;cursor:pointer;background:#fff;font:500 15px 'Barlow',sans-serif;color:#00226E;user-select:none;transition:all 0.3s ease;box-shadow:0 2px 8px rgba(0,0,0,0.06);max-width:280px;margin:0 auto;}
-.robot-check-box:hover{border-color:#003CC5;box-shadow:0 2px 12px rgba(0,60,197,0.15);}
-.robot-check-box.checked{border-color:#22c55e;background:#f0fdf4;}
-.robot-check-checkbox-wrap{position:relative;width:28px;height:28px;flex-shrink:0;}
-.robot-check-checkbox-wrap input[type="checkbox"]{width:28px !important;height:28px !important;min-width:28px;min-height:28px;cursor:pointer;accent-color:#003CC5;-webkit-appearance:checkbox !important;appearance:checkbox !important;display:block !important;border:2px solid #003CC5 !important;border-bottom:2px solid #003CC5 !important;border-radius:4px;padding:0 !important;margin:0 !important;background:#fff;transition:all 0.2s ease;}
-.robot-check-text{font:500 16px 'Barlow',sans-serif;color:#00226E;letter-spacing:0.3px;}
-.robot-check-error{color:#dc2626;font:500 13px 'Barlow',sans-serif;text-align:center;margin-top:8px;min-height:20px;}
+
 #respond form #submit:disabled{opacity:0.5;cursor:not-allowed;background:linear-gradient(166.21deg, #ccc 0%, #aaa 100%);}
 #respond form #submit:not(:disabled){opacity:1;cursor:pointer;}
 #respond form .anr_captcha_field{margin-top:15px;margin-bottom:15px;display:flex;flex-direction:column;align-items:center;}
@@ -389,36 +391,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <script>
+var blogRobotChecked=false;
+function toggleBlogRobot(){
+  blogRobotChecked=!blogRobotChecked;
+  var sq=document.getElementById('blog-robot-sq');
+  var tk=document.getElementById('blog-robot-tk');
+  var btn=document.getElementById('submit');
+  var err=document.getElementById('blog-robot-err');
+  var box=document.getElementById('blog-robot-box');
+  if(blogRobotChecked){
+    sq.style.background='#4a6fa5';sq.style.borderColor='#4a6fa5';
+    tk.style.display='block';
+    if(btn)btn.disabled=false;
+    if(err){err.style.display='none';}
+    if(box){box.style.borderColor='#e0e0e0';}
+  }else{
+    sq.style.background='#fff';sq.style.borderColor='#4a6fa5';
+    tk.style.display='none';
+    if(btn)btn.disabled=true;
+    if(err){err.style.display='none';}
+  }
+}
 (function(){
-var cb=document.getElementById('not-a-robot');
-var btn=document.getElementById('submit');
-var box=document.getElementById('robot-check-box');
-var err=document.getElementById('robot-error');
-if(!cb||!btn)return;
-btn.disabled=true;
-cb.addEventListener('change',function(){
-if(cb.checked){
-btn.disabled=false;
-box.classList.add('checked');
-err.textContent='';
-}else{
-btn.disabled=true;
-box.classList.remove('checked');
-}
-});
-var form=cb.closest('form');
-if(form){form.addEventListener('submit',function(e){
-if(!cb.checked){
-e.preventDefault();
-err.textContent='Please confirm you are not a robot.';
-box.style.borderColor='#dc2626';
-box.classList.remove('checked');
-setTimeout(function(){box.style.borderColor='';},2000);
-}
-});}
-if(box){box.addEventListener('click',function(e){
-if(e.target!==cb){cb.checked=!cb.checked;cb.dispatchEvent(new Event('change'));}
-});}
+  var btn=document.getElementById('submit');
+  if(btn)btn.disabled=true;
+  var form=document.getElementById('commentform');
+  if(form){form.addEventListener('submit',function(e){
+    if(!blogRobotChecked){
+      e.preventDefault();e.stopImmediatePropagation();
+      var err=document.getElementById('blog-robot-err');
+      var box=document.getElementById('blog-robot-box');
+      if(err){err.textContent='Please confirm that you are not a robot.';err.style.display='block';}
+      if(box){box.style.borderColor='#B94A48';}
+      return false;
+    }
+  },true);}
 })();
 </script>
 </body>
