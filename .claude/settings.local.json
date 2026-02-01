@@ -29,7 +29,11 @@
       "Bash(powershell -Command:*)",
       "Bash(Select-Object -First 20)",
       "Bash(git add:*)",
-      "Bash(git commit -m \"$\\(cat <<''EOF''\nRemove all HTTrack references and replace root index with clean redirect\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nRemove all HTTrack references and replace root index with clean redirect\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git checkout:*)",
+      "Bash(git stash:*)",
+      "Bash(dir \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\wp-content\\\\themes\\\\konseil\\\\assets\\\\img\\\\contact-services\")"
     ]
   }
 }

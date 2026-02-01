@@ -121,13 +121,62 @@ Send us a message                        </h2>
 </label>
 <textarea name="item_meta[13]" id="field_9jv0r12" rows="5"  data-reqmsg="Message cannot be blank." aria-required="true" data-invmsg="Message is invalid" aria-invalid="false"  ></textarea></div><input type="hidden" name="item_key" value="" />
 <div class="frm__66030e65558be" style="display:none;"> <label for="frm_email_2" > If you are human, leave this field blank. </label> <input id="frm_email_2" type="text" class="frm_verify" name="frm__66030e65558be" value="" autocomplete="false" /></div>
-<div class="frm_form_field" style="margin:15px 0;">
-<label style="display:flex;align-items:center;gap:10px;cursor:pointer;padding:12px;border:1px solid #ddd;border-radius:4px;background:#fafafa;">
-<input type="checkbox" id="not_robot_en" name="not_robot" required style="width:20px;height:20px;">
-<span style="font-size:14px;">I'm not a robot</span>
-</label>
+<div class="frm_form_field" id="robot_check_container" style="margin:15px 0;">
+<div id="robot_check_box" style="display:flex;align-items:center;gap:14px;padding:16px 20px;border:1px solid #e0e0e0;border-radius:12px;background:#f8f9fa;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,0.06);max-width:400px;" onclick="toggleRobotCheck();">
+<div id="robot_square" style="width:28px;height:28px;min-width:28px;border:2.5px solid #4a6fa5;border-radius:6px;background:#fff;display:flex;align-items:center;justify-content:center;transition:background 0.2s,border-color 0.2s;">
+<svg id="robot_tick" width="16" height="12" viewBox="0 0 16 12" style="display:none;">
+<path d="M2 6L6 10L14 2" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
 </div>
-<div class="frm_submit frm_flex"> <button class="frm_button_submit" type="submit" >Submit</button></div></div></fieldset></div></form></div></div></div><div class="container">
+<span style="font-size:15px;color:#1a1a2e;user-select:none;">I'm not a robot</span>
+</div>
+<input type="hidden" id="not_robot_en" name="not_robot" value="">
+<div id="robot_error" style="display:none;color:#B94A48;font-size:13px;margin-top:6px;"></div>
+</div>
+<div class="frm_submit frm_flex"> <button class="frm_button_submit" type="submit" >Submit</button></div>
+<script>
+var robotChecked = false;
+function toggleRobotCheck(){
+  robotChecked = !robotChecked;
+  var square = document.getElementById('robot_square');
+  var tick = document.getElementById('robot_tick');
+  var hidden = document.getElementById('not_robot_en');
+  if(robotChecked){
+    square.style.background = '#4a6fa5';
+    square.style.borderColor = '#4a6fa5';
+    tick.style.display = 'block';
+    hidden.value = '1';
+    clearRobotError();
+  } else {
+    square.style.background = '#fff';
+    square.style.borderColor = '#4a6fa5';
+    tick.style.display = 'none';
+    hidden.value = '';
+  }
+}
+function clearRobotError(){
+  var errDiv = document.getElementById('robot_error');
+  var box = document.getElementById('robot_check_box');
+  if(errDiv){ errDiv.style.display='none'; }
+  if(box){ box.style.borderColor='#e0e0e0'; }
+}
+(function(){
+  var form = document.getElementById('not_robot_en').closest('form');
+  if(!form) return;
+  form.addEventListener('submit', function(e){
+    var errDiv = document.getElementById('robot_error');
+    var box = document.getElementById('robot_check_box');
+    if(!robotChecked){
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      errDiv.textContent = 'Please confirm that you are not a robot.';
+      errDiv.style.display = 'block';
+      box.style.borderColor = '#B94A48';
+      return false;
+    }
+  }, true);
+})();
+</script></div></fieldset></div></form></div></div></div><div class="container">
 <div class="contacts-map"> <iframe onload="Wpfcll.r(this,true);" data-wpfc-original-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2558.1648417817746!2d6.028303!3d50.053457!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0b0fbbf1a4b7d%3A0x0!2s34%20Grand-Rue%2C%20L-9710%20Clervaux%2C%20Luxembourg!5e0!3m2!1sfr!2sua!4v1583112407213!5m2!1sfr!2sua" width="1010" height="496" frameborder="0" class="custom-map" style="border:0;"></iframe></div></div></div></section>
 <a href="#thank" class="popup-with-form call-thank"></a>
 <div id="thank" class="mfp-hide white-popup-block"> <p class="modal-title"> Thank you. We got your message. </p></div></main>
