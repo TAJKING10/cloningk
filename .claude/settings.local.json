@@ -34,7 +34,8 @@
       "Bash(git checkout:*)",
       "Bash(git stash:*)",
       "Bash(dir \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\wp-content\\\\themes\\\\konseil\\\\assets\\\\img\\\\contact-services\")",
-      "Bash(powershell -ExecutionPolicy Bypass -File:*)"
+      "Bash(powershell -ExecutionPolicy Bypass -File:*)",
+      "Bash(node:*)"
     ]
   }
 }
