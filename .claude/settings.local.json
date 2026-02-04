@@ -35,7 +35,16 @@
       "Bash(git stash:*)",
       "Bash(dir \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\wp-content\\\\themes\\\\konseil\\\\assets\\\\img\\\\contact-services\")",
       "Bash(powershell -ExecutionPolicy Bypass -File:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(Remove-Item -Recurse -Force \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\main-page\\\\services\\\\coaching\")",
+      "Bash(Remove-Item -Recurse -Force \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\fr\\\\main-page\\\\services\\\\coaching\")",
+      "Bash(Remove-Item -Recurse -Force \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\en\\\\main-page\\\\services\\\\coaching\")",
+      "Bash(Remove-Item -Recurse -Force \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\category\\\\blog\\\\coaching\")",
+      "Bash(Remove-Item -Recurse -Force \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\en\\\\category\\\\blog\\\\coaching\")",
+      "Bash(Remove-Item -Recurse -Force \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\tag\\\\coaching\")",
+      "Bash(Remove-Item -Recurse -Force \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\en\\\\tag\\\\coaching\")",
+      "Bash(Remove-Item -Recurse -Force \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\wp-content\\\\themes\\\\konseil\\\\assets\\\\img\\\\coaching\")",
+      "Bash(find advensys-conseil.lu -name \"*.html\" -exec sed -i '/<li id=\"\"menu-item-251\"\".*[Cc]oaching.*<\\\\/li>/d' {} ;)"
     ]
   }
 }
