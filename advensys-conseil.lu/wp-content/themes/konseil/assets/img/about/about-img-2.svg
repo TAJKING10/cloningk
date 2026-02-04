@@ -1,0 +1,9 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="400" height="300" fill="#00226E"/>
+<rect x="50" y="80" width="300" height="140" rx="10" fill="#1a3a7a"/>
+<circle cx="120" cy="150" r="40" fill="#c9a227"/>
+<text x="120" y="160" font-family="Arial" font-size="28" fill="white" text-anchor="middle">★</text>
+<text x="250" y="140" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Solutions</text>
+<text x="250" y="165" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Professionnelles</text>
+<text x="200" y="260" font-family="Arial" font-size="14" fill="#c9a227" text-anchor="middle">Advensys Conseil</text>
+</svg>
