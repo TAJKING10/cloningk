@@ -1,0 +1,12 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Made in Luxembourg badge -->
+<circle cx="60" cy="60" r="55" stroke="#00226E" stroke-width="3" fill="white"/>
+<circle cx="60" cy="60" r="45" stroke="#00226E" stroke-width="2" fill="none"/>
+<text x="60" y="35" font-family="Arial" font-size="10" font-weight="bold" fill="#00226E" text-anchor="middle">MADE IN</text>
+<text x="60" y="55" font-family="Arial" font-size="14" font-weight="bold" fill="#00226E" text-anchor="middle">LUXEMBOURG</text>
+<!-- Luxembourg flag colors -->
+<rect x="30" y="65" width="60" height="6" fill="#ED2939"/>
+<rect x="30" y="71" width="60" height="6" fill="white"/>
+<rect x="30" y="77" width="60" height="6" fill="#00A1DE"/>
+<text x="60" y="100" font-family="Arial" font-size="8" fill="#00226E" text-anchor="middle">Quality Label</text>
+</svg>
