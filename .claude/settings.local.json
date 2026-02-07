@@ -45,7 +45,8 @@
       "Bash(Remove-Item -Recurse -Force \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\en\\\\tag\\\\coaching\")",
       "Bash(Remove-Item -Recurse -Force \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\wp-content\\\\themes\\\\konseil\\\\assets\\\\img\\\\coaching\")",
       "Bash(find advensys-conseil.lu -name \"*.html\" -exec sed -i '/<li id=\"\"menu-item-251\"\".*[Cc]oaching.*<\\\\/li>/d' {} ;)",
-      "Bash(copy \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\WhatsApp Image 2026-02-05 at 16.10.27.jpeg\" \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\wp-content\\\\uploads\\\\2023\\\\06\\\\groupe-advensys-poster.jpeg\")"
+      "Bash(copy \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\WhatsApp Image 2026-02-05 at 16.10.27.jpeg\" \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\wp-content\\\\uploads\\\\2023\\\\06\\\\groupe-advensys-poster.jpeg\")",
+      "Bash(find:*)"
     ]
   }
 }
