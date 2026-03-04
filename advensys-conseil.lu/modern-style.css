@@ -1,0 +1,60 @@
+/* Advensys Conseil - Modern Style Additions */
+/* =========================================== */
+
+/* Base improvements */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Better link transitions */
+a {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Button hover effects */
+.btn-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(197, 164, 126, 0.4);
+}
+
+/* Image loading optimization */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form input improvements */
+input, textarea, select {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #c5a47e;
+    box-shadow: 0 0 0 3px rgba(197, 164, 126, 0.2);
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Print styles */
+@media print {
+    .menu-btn, .phone-box, footer, .a2a_kit {
+        display: none !important;
+    }
+}

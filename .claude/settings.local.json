@@ -47,7 +47,11 @@
       "Bash(find advensys-conseil.lu -name \"*.html\" -exec sed -i '/<li id=\"\"menu-item-251\"\".*[Cc]oaching.*<\\\\/li>/d' {} ;)",
       "Bash(copy \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\WhatsApp Image 2026-02-05 at 16.10.27.jpeg\" \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\wp-content\\\\uploads\\\\2023\\\\06\\\\groupe-advensys-poster.jpeg\")",
       "Bash(find:*)",
-      "Bash(ping:*)"
+      "Bash(ping:*)",
+      "Bash(move \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\DEPLOYMENT_OVH.md\" \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\DEPLOY\"\" && move \"C:UsersToufiAndroidStudioProjectscloningkdeploy-ovh.ps1\" \"C:UsersToufiAndroidStudioProjectscloningkDEPLOY\"\")",
+      "Bash(move \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\deploy-ovh.bat\" \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\DEPLOY\"\")",
+      "Bash(dir \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\DEPLOY\")",
+      "Bash(dir \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\")"
     ]
   }
 }
