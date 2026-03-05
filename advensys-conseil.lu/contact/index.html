@@ -155,7 +155,12 @@ Envoyez-nous un message                        </h2>
 <div id="robot_error" style="display:none;color:#B94A48;font-size:13px;margin-top:6px;"></div>
 </div>
 <div class="frm_submit frm_flex"> <button class="frm_button_submit" type="submit" >Envoyer</button></div>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
+(function(){
+  emailjs.init("UIyCerW0Z_0KhzuE4");
+})();
+
 var robotChecked = false;
 function toggleRobotCheck(){
   robotChecked = !robotChecked;
@@ -182,19 +187,61 @@ function clearRobotError(){
   if(box){ box.style.borderColor='#e0e0e0'; }
 }
 (function(){
-  var form = document.getElementById('not_robot').closest('form');
+  var form = document.getElementById('form_contact-form');
   if(!form) return;
   form.addEventListener('submit', function(e){
+    e.preventDefault();
+
     var errDiv = document.getElementById('robot_error');
     var box = document.getElementById('robot_check_box');
     if(!robotChecked){
-      e.preventDefault();
-      e.stopImmediatePropagation();
       errDiv.textContent = 'Veuillez confirmer que vous n\'êtes pas un robot.';
       errDiv.style.display = 'block';
       box.style.borderColor = '#B94A48';
       return false;
     }
+
+    // Get form values
+    var prenom = document.getElementById('field_qh4icy').value;
+    var nom = document.getElementById('field_ocfup1').value;
+    var mobile = document.getElementById('field_gutv3').value;
+    var email = document.getElementById('field_29yf4d').value;
+    var entreprise = document.getElementById('field_nw9zq').value;
+    var message = document.getElementById('field_9jv0r1').value;
+
+    // Disable button while sending
+    var submitBtn = form.querySelector('.frm_button_submit');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Envoi en cours...';
+
+    // Send via EmailJS
+    var templateParams = {
+      from_name: prenom + ' ' + nom,
+      from_email: email,
+      phone: mobile,
+      company: entreprise,
+      message: message,
+      to_name: 'Advensys Conseil'
+    };
+
+    emailjs.send('service_f0zpdwx', 'template_oyzst9v', templateParams)
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        // Show thank you message
+        document.querySelector('.call-thank').click();
+        // Reset form
+        form.reset();
+        robotChecked = false;
+        document.getElementById('robot_square').style.background = '#fff';
+        document.getElementById('robot_tick').style.display = 'none';
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Envoyer';
+      }, function(error) {
+        console.log('FAILED...', error);
+        alert('Erreur lors de l\'envoi. Veuillez réessayer.');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Envoyer';
+      });
   }, true);
 })();
 </script></div></fieldset></div></form></div></div></div><div class="container">
