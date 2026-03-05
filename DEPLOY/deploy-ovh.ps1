@@ -16,7 +16,7 @@ $CONFIG = @{
     FtpPassword = "YOUR_FTP_PASSWORD"                # Your FTP password
 
     # Paths
-    LocalPath   = "C:\Users\Toufi\AndroidStudioProjects\cloningk\advensys-conseil.lu"
+    LocalPath   = "$PSScriptRoot\..\advensys-conseil.lu"
     RemotePath  = "/www"
 }
 

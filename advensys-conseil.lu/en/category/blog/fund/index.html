@@ -96,9 +96,9 @@ Publications
 <div class="name_of_block"> <span>SUBSCRIBE TO OUR BLOG</span> <img src="../../../../wp-content/themes/konseil/assets/img/blog/subcribe.png" alt="subcribe" style="object-fit: contain;"></div><img src="../../../../wp-content/themes/konseil/assets/img/blog/yelline.png" alt="yelline" class="yelline">
 <div class="form_submit">
 <div class="tnp tnp-subscription">
-<form method="post" action="https://advensys-conseil.lu/?na=s" onsubmit="return newsletter_check(this)">
+<form  action="https://advensys-conseil.lu/?na=s" onsubmit="return newsletter_check(this)">
 <input type="hidden" name="nlang" value="">
-<div class="tnp-field tnp-field-email"><input class="tnp-email" type="email" name="ne" placeholder="E-mail*" required></div><div class="tnp-field tnp-field-button"> <input class="tnp-submit" type="submit" value="Submit" ></div></form></div></div></div></div></div><div class="paging"> <ul> </ul></div></main></div><style>.background__fix{background:linear-gradient(166.21deg, #FFC200 0%, #FF785E 100%)!important;}
+<div class="tnp-field tnp-field-email"><input class="tnp-email" type="email" name="ne" placeholder="E-mail*" required></div><div class="tnp-field tnp-field-button"> <input class="tnp-submit" type="button" value="Submit"  onclick="if(typeof newsletter_check === 'function'){ if(newsletter_check(this.form)) this.form.submit(); } else { this.form.submit(); }"></div></form></div></div></div></div></div><div class="paging"> <ul> </ul></div></main></div><style>.background__fix{background:linear-gradient(166.21deg, #FFC200 0%, #FF785E 100%)!important;}
 .blog-screen{background:url(../../../../wp-content/themes/konseil/assets/img/business.png) no-repeat center;background-size:cover;height:90vh;margin-bottom:40px;}
 @media(max-width:990px){
 .main-screen{margin-bottom:0;height:100vh;}

@@ -54,7 +54,8 @@
       "Bash(dir \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\")",
       "Bash(copy \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\correct logo to use in footer.svg\" \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\wp-content\\\\uploads\\\\2020\\\\02\\\\logo-footer.svg\")",
       "Bash(cmd /c copy:*)",
-      "Bash(cmd /c dir \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\wp-content\\\\uploads\\\\2020\\\\02\\\\*.svg\")"
+      "Bash(cmd /c dir \"C:\\\\Users\\\\Toufi\\\\AndroidStudioProjects\\\\cloningk\\\\advensys-conseil.lu\\\\wp-content\\\\uploads\\\\2020\\\\02\\\\*.svg\")",
+      "Bash(npx http-server -p 8080 -o)"
     ]
   }
 }
